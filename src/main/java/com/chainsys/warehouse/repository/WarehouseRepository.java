@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.chainsys.warehouse.pojo.Warehouse;
+import com.chainsys.warehouse.model.Warehouse;
 	public interface WarehouseRepository extends CrudRepository<Warehouse,Integer>{
 		Warehouse findById(int id);
 		Warehouse save(Warehouse dr);

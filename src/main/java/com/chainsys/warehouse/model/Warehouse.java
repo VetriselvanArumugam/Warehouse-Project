@@ -1,4 +1,4 @@
-package com.chainsys.warehouse.pojo;
+package com.chainsys.warehouse.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

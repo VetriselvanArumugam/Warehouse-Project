@@ -1,4 +1,4 @@
-package com.chainsys.warehouse.pojo;
+package com.chainsys.warehouse.model;
 
 import java.util.Date;
 
@@ -12,13 +12,13 @@ import javax.persistence.Table;
 public class StorageDetails {
 	@Id
 	@Column(name ="receipt_number")
-	private long receiptNumber;
+	private int receiptNumber;
 	@Column(name ="receipt_date")
 	private Date receiptDate;
-	public long getReceiptNumber() {
+	public int getReceiptNumber() {
 		return receiptNumber;
 	}
-	public void setReceiptNumber(long receiptNumber) {
+	public void setReceiptNumber(int receiptNumber) {
 		this.receiptNumber = receiptNumber;
 	}
 	public Date getReceiptDate() {

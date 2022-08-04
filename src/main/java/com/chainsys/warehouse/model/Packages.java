@@ -1,4 +1,6 @@
-package com.chainsys.warehouse.pojo;
+package com.chainsys.warehouse.model;
+
+
 
 import java.util.Date;
 
@@ -12,6 +14,18 @@ public class Packages {
 	@Id
 	@Column(name ="package_id")
 	private int packageId;
+	@Column(name ="owner_name")
+	private String ownerName;
+	@Column(name ="phone_number")
+	private long PhoneNumber;
+	@Column(name ="email_id")
+	private String emailId;
+	@Column(name ="owner_aadhaar_number")
+	private long ownerAadhaarNumber;
+	@Column(name ="package_weight")
+	private int packageWeight;
+	@Column(name ="package_height")
+	private int packageHeight;
 	@Column(name ="package_number")
 	private int packageNumber;
 	@Column(name ="package_name")
@@ -19,7 +33,7 @@ public class Packages {
 	@Column(name ="package_type")
 	private String packageType;
 	@Column(name ="package_date")
-	private Date packedDate;
+	private Date packageDate;
 	@Column(name ="expiry_date")
 	private Date expiryDate;
 	@Column(name ="status")
@@ -29,42 +43,6 @@ public class Packages {
 	}
 	public void setPackageId(int packageId) {
 		this.packageId = packageId;
-	}
-	public int getPackageNumber() {
-		return packageNumber;
-	}
-	public void setPackageNumber(int packageNumber) {
-		this.packageNumber = packageNumber;
-	}
-	public String getPackageName() {
-		return packageName;
-	}
-	public void setPackageName(String packageName) {
-		this.packageName = packageName;
-	}
-	public String getPackageType() {
-		return packageType;
-	}
-	public void setPackageType(String packageType) {
-		this.packageType = packageType;
-	}
-	public Date getPackedDate() {
-		return packedDate;
-	}
-	public void setPackedDate(Date packedDate) {
-		this.packedDate = packedDate;
-	}
-	public Date getExpiryDate() {
-		return expiryDate;
-	}
-	public void setExpiryDate(Date expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
 	}
 	public String getOwnerName() {
 		return ownerName;
@@ -102,18 +80,43 @@ public class Packages {
 	public void setPackageHeight(int packageHeight) {
 		this.packageHeight = packageHeight;
 	}
-	@Column(name ="owner_name")
-	private String ownerName;
-	@Column(name ="phone_number")
-	private long PhoneNumber;
-	@Column(name ="email_id")
-	private String emailId;
-	@Column(name ="owner_aadhaar_number")
-	private long ownerAadhaarNumber;
-	@Column(name ="package_weight")
-	private int packageWeight;
-	@Column(name ="package_height")
-	private int packageHeight;
+	public int getPackageNumber() {
+		return packageNumber;
+	}
+	public void setPackageNumber(int packageNumber) {
+		this.packageNumber = packageNumber;
+	}
+	public String getPackageName() {
+		return packageName;
+	}
+	public void setPackageName(String packageName) {
+		this.packageName = packageName;
+	}
+	public String getPackageType() {
+		return packageType;
+	}
+	public void setPackageType(String packageType) {
+		this.packageType = packageType;
+	}
+	public Date getPackageDate() {
+		return packageDate;
+	}
+	public void setPackageDate(Date packageDate) {
+		this.packageDate = packageDate;
+	}
+	public Date getExpiryDate() {
+		return expiryDate;
+	}
+	public void setExpiryDate(Date expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
 	
 	
 }

@@ -1,4 +1,4 @@
-package com.chainsys.warehouse.pojo;
+package com.chainsys.warehouse.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,13 +8,23 @@ import javax.persistence.Table;
 @Entity
 @Table(name="storage_units")
 public class StorageUnits {
-	@Id
+
 	@Column(name ="warehouseid")
 	private int warehouseId;
+	@Id
 	@Column(name ="unit_id")
 	private int unitId;
 	@Column(name ="storage_type")
 	private String storageType;
+	@Column(name ="maximum_capacity")
+	private int maximumCapacity;
+	@Column(name ="current_used_capacity")
+	private int currentUsedCapacity;
+	@Column(name ="status")
+	private String status;
+	@Column(name ="location_of_storage_unit")
+	private String locationOfStorageUnit;
+	
 	public int getWarehouseId() {
 		return warehouseId;
 	}
@@ -57,14 +67,7 @@ public class StorageUnits {
 	public void setLocationOfStorageUnit(String locationOfStorageUnit) {
 		this.locationOfStorageUnit = locationOfStorageUnit;
 	}
-	@Column(name ="maximum_capacity")
-	private int maximumCapacity;
-	@Column(name ="current_used_capacity")
-	private int currentUsedCapacity;
-	@Column(name ="status")
-	private String status;
-	@Column(name ="location_of_storage_unit")
-	private String locationOfStorageUnit;
+
 	
 }
 

@@ -6,12 +6,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>get Warehouse</title>
+<title>Add Storage Units</title>
 </head>
 <body>
 	<div id="root">
 		<div id="form">
-			<form:form action="add" method="get" modelAttribute="getWarehouseid">
+			<form:form action="add" method="post" modelAttribute="addstorageunits">
 				<div>
 					<label for="warehouseId">Warehouse Id</label>
 					<div>
@@ -19,48 +19,45 @@
 					</div>
 				</div>
 				<div>
-					<label for="address">Address</label>
+					<label for="unitId">unit Id</label>
 					<div>
-						<form:input path="address" />
+						<form:input path="unitId" />
 					</div>
 				</div>
 				<div>
-					<label for="location">Location</label>
+					<label for="storageType">storage type</label>
 					<div>
-						<form:input path="location" />
+						<form:input path="storageType" />
 					</div>
 				</div>
 				<div>
-					<label for="state">State</label>
+					<label for="maximumCapacity">maximum capacity</label>
 					<div>
-						<form:input path="state" />
+						<form:input path="maximumCapacity" />
 					</div>
 				</div>
 				<div>
-					<label for="country">Country</label>
+					<label for="currentUsedCapacity">current used capacity</label>
 					<div>
-						<form:input path="country" />
+						<form:input path="currentUsedCapacity" />
 					</div>
 				</div>
 				<div>
-					<label for="pincode">Pincode</label>
+					<label for="status">status</label>
 					<div>
-						<form:input path="pincode" />
+						<form:input path="status" />
 					</div>
 				</div>
 				<div>
-					<label for="totalArea">Total Area</label>
+					<label for="locationOfStorageUnit">location of storage unit</label>
 					<div>
-						<form:input path="totalArea" />
-					</div>
-				</div>
-				<div>
-					<label for="warehouseType">Warehouse Type</label>
-					<div>
-						<form:input path="warehouseType" />
+						<form:input path="locationOfStorageUnit" />
 					</div>
 				</div>
 				
+				<div>
+					<form:button>Add Storage Units</form:button>
+				</div>
 			</form:form>
 		</div>
 	</div>

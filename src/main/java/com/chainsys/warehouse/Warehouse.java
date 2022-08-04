@@ -1,11 +1,12 @@
 package com.chainsys.warehouse;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class MainApp {
+public class Warehouse {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MainApp.class, args);
+		SpringApplication.run(Warehouse.class, args);
 		
 	}
 

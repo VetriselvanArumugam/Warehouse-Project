@@ -4,29 +4,29 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.chainsys.warehouse.pojo.StorageDetails;
+import com.chainsys.warehouse.model.StorageDetails;
 import com.chainsys.warehouse.repository.StorageDetailsRepository;
 
 @Service
 public class StorageDetailsService {
 	
 	    @Autowired
-	    private StorageDetailsRepository repo;
+	    private StorageDetailsRepository storageDetailsRepository;
 	    public List<StorageDetails> getStorageDetails() {
-	        List<StorageDetails> listWR = repo.findAll();
-	        return listWR;
+	        List<StorageDetails> liststorageDetails = storageDetailsRepository.findAll();
+	        return liststorageDetails;
 	    }
 
-	    public StorageDetails save(StorageDetails wr) {
-	        return repo.save(wr);
+	    public StorageDetails save(StorageDetails thestorageDetails) {
+	        return storageDetailsRepository.save(thestorageDetails);
 	    }
 
 	    public StorageDetails findById(int id) {
-	        return repo.findById(id);
+	        return storageDetailsRepository.findById(id);
 	    }
 
 	    public void deleteById(int id) {
-	        repo.deleteById(id);
+	    	storageDetailsRepository.deleteById(id);
 	    }
 
 } 
