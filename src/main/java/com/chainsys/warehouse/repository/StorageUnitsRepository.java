@@ -9,4 +9,5 @@ import com.chainsys.warehouse.model.StorageUnits;
 		StorageUnits save(StorageUnits id);
 		void deleteById(int su_id);
 		List <StorageUnits> findAll();
+		List<StorageUnits> findByWarehouseId(int id);
 	}

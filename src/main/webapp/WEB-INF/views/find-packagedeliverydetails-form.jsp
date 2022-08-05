@@ -14,55 +14,55 @@
 				<div>
 					<label for="deliveryNumber">Delivery Number</label>
 					<div>
-						<form:input path="deliveryNumber" />
+						<form:input path="deliveryNumber" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveryDate">Dlivery Date</label>
 					<div>
-						<form:input path="deliveryDate" />
+						<form:input path="deliveryDate"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId" />
+						<form:input path="unitId" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" />
+						<form:input path="packageId" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredPerson">Delivered Person</label>
 					<div>
-						<form:input path="deliveredPerson" />
+						<form:input path="deliveredPerson" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredAadhaarNumber">Delivered Aadhaar Number</label>
 					<div>
-						<form:input path="deliveredAadhaarNumber" />
+						<form:input path="deliveredAadhaarNumber" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
 					<div>
-						<form:input path="deliveredPhoneNumber" />
+						<form:input path="deliveredPhoneNumber"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="deliveredCity">Delivered City</label>
 					<div>
-						<form:input path="deliveredCity" />
+						<form:input path="deliveredCity" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredpincode">Delivered Pincode</label>
 					<div>
-						<form:input path="deliveredpincode" />
+						<form:input path="deliveredpincode" readonly="true"/>
 					</div>
 				</div>
 				<div>

@@ -4,7 +4,10 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -29,6 +32,18 @@ public class PackageDeliveryDetails {
 	private String deliveredCity;
 	@Column(name = "delivered_pincode")
 	private long deliveredPincode;
+	
+	@OneToOne(fetch =FetchType.LAZY)
+	@JoinColumn(name="package_id",nullable=false,insertable=false,updatable=false)
+	private Packages packages;
+
+	public Packages getPackages() {
+		return packages;
+	}
+
+	public void setPackages(Packages packages) {
+		this.packages = packages;
+	}
 
 	public int getDeliveryNumber() {
 		return deliveryNumber;

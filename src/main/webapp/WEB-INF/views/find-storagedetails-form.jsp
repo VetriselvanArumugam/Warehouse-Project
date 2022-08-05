@@ -15,25 +15,25 @@
 				<div>
 					<label for="receiptNumber">Receipt Number</label>
 					<div>
-						<form:input path="receiptNumber" />
+						<form:input path="receiptNumber" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="receiptDate">Receipt Date</label>
 					<div>
-						<form:input path="receiptDate" />
+						<form:input path="receiptDate"readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId" />
+						<form:input path="unitId"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" />
+						<form:input path="packageId" readonly="true"/>
 					</div>
 				<div>
 					<form:button>Get Storage Details</form:button>

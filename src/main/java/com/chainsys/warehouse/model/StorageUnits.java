@@ -2,7 +2,10 @@ package com.chainsys.warehouse.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +28,16 @@ public class StorageUnits {
 	@Column(name ="location_of_storage_unit")
 	private String locationOfStorageUnit;
 	
+	@ManyToOne(fetch =FetchType.LAZY)
+	@JoinColumn(name = "warehouseid", nullable = false, insertable = false, updatable =false)
+	private Warehouse warehouse;
+	
+	public Warehouse getWarehouse() {
+		return warehouse;
+	}
+	public void setWarehouse(Warehouse warehouse) {
+		this.warehouse = warehouse;
+	}
 	public int getWarehouseId() {
 		return warehouseId;
 	}

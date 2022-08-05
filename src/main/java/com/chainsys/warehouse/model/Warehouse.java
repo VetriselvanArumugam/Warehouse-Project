@@ -1,8 +1,12 @@
 package com.chainsys.warehouse.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -21,6 +25,16 @@ public class Warehouse {
 	private String country;
 	@Column(name ="pincode")
 	private int pincode;
+	
+	@OneToMany(mappedBy ="warehouse",fetch=FetchType.LAZY)
+	private List<StorageUnits> storageUnits;
+	
+	public List<StorageUnits> getStorageUnits() {
+		return storageUnits;
+	}
+	public void setStorageUnits(List<StorageUnits> storageUnits) {
+		this.storageUnits = storageUnits;
+	}
 	public int getWarehouseId() {
 		return warehouseId;
 	}

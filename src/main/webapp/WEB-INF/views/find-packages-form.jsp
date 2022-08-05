@@ -15,79 +15,79 @@
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" />
+						<form:input path="packageId" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageNumber">Package Number</label>
 					<div>
-						<form:input path="packageNumber" />
+						<form:input path="packageNumber"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageName">Package Name</label>
 					<div>
-						<form:input path="packageName" />
+						<form:input path="packageName"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageType">Package Type</label>
 					<div>
-						<form:input path="packageType" />
+						<form:input path="packageType"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageDate">Package Date</label>
 					<div>
-						<form:input path="packageDate" />
+						<form:input path="packageDate"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="expiryDate">Expiry Date</label>
 					<div>
-						<form:input path="expiryDate" />
+						<form:input path="expiryDate" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="status">Status</label>
 					<div>
-						<form:input path="status" />
+						<form:input path="status" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="ownerName">Owner Name</label>
 					<div>
-						<form:input path="ownerName" />
+						<form:input path="ownerName" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="ownerAadhaarNumber">Owner Aadhaar Number</label>
 					<div>
-						<form:input path="ownerAadhaarNumber" />
+						<form:input path="ownerAadhaarNumber" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="phoneNumber">Phone Number</label>
 					<div>
-						<form:input path="phoneNumber" />
+						<form:input path="phoneNumber" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="emailId">Email Id</label>
 					<div>
-						<form:input path="emailId" />
+						<form:input path="emailId" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageWeight">package Weight</label>
 					<div>
-						<form:input path="packageWeight" />
+						<form:input path="packageWeight" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageHeight">package Height</label>
 					<div>
-						<form:input path="packageHeight" />
+						<form:input path="packageHeight" readonly="true"/>
 					</div>
 				</div>
 				<div>

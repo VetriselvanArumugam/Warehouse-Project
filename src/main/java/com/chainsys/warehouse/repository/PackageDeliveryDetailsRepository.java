@@ -15,4 +15,5 @@ public interface PackageDeliveryDetailsRepository extends CrudRepository<Package
 	PackageDeliveryDetails deleteById(int packageDeliveryDetails);
 
 	List<PackageDeliveryDetails> findAll();
+	PackageDeliveryDetails findPackageDeliveryDetailsByPackageId(int id);
 }

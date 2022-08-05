@@ -15,43 +15,43 @@
 				<div>
 					<label for="warehouseId">Warehouse Id</label>
 					<div>
-						<form:input path="warehouseId" />
+						<form:input path="warehouseId" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="unitId">unit id</label>
 					<div>
-						<form:input path="UnitId" />
+						<form:input path="UnitId"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="storageType">storage type</label>
 					<div>
-						<form:input path="storageType" />
+						<form:input path="storageType" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="maximumCapacity">maximum capacity</label>
 					<div>
-						<form:input path="maximumCapacity" />
+						<form:input path="maximumCapacity" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="currentUsedCapacity">current used capacity</label>
 					<div>
-						<form:input path="currentUsedCapacity" />
+						<form:input path="currentUsedCapacity" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="status">status</label>
 					<div>
-						<form:input path="status" />
+						<form:input path="status" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="locationOfStorageUnit">location of storage unit</label>
 					<div>
-						<form:input path="locationOfStorageUnit" />
+						<form:input path="locationOfStorageUnit" readonly="true"/>
 					</div>
 				
 				</div>

@@ -6,7 +6,9 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="Packages")
@@ -38,6 +40,14 @@ public class Packages {
 	private Date expiryDate;
 	@Column(name ="status")
 	private String status;
+	@OneToOne (mappedBy="packages", fetch =FetchType.LAZY)
+	private PackageDeliveryDetails packageDeliveryDetails;
+	public PackageDeliveryDetails getPackageDeliveryDetails() {
+		return packageDeliveryDetails;
+	}
+	public void setPackageDeliveryDetails(PackageDeliveryDetails packageDeliveryDetails) {
+		this.packageDeliveryDetails = packageDeliveryDetails;
+	}
 	public int getPackageId() {
 		return packageId;
 	}

@@ -15,49 +15,49 @@
 				<div>
 					<label for="warehouseId">Warehouse Id</label>
 					<div>
-						<form:input path="warehouseId" />
+						<form:input path="warehouseId" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="address">Address</label>
 					<div>
-						<form:input path="address" />
+						<form:input path="address"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="location">Location</label>
 					<div>
-						<form:input path="location" />
+						<form:input path="location"readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="state">State</label>
 					<div>
-						<form:input path="state" />
+						<form:input path="state" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="country">Country</label>
 					<div>
-						<form:input path="country" />
+						<form:input path="country" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="pincode">Pincode</label>
 					<div>
-						<form:input path="pincode" />
+						<form:input path="pincode" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="totalArea">Total Area</label>
 					<div>
-						<form:input path="totalArea" />
+						<form:input path="totalArea" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="warehouseType">Warehouse Type</label>
 					<div>
-						<form:input path="warehouseType" />
+						<form:input path="warehouseType" readonly="true"/>
 					</div>
 				</div>
 				
