@@ -21,25 +21,25 @@
 				<div>
 					<label for="packageNumber">Package Number</label>
 					<div>
-						<form:input path="packageNumber"readonly="true" />
+						<form:input path="packageNumber" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageName">Package Name</label>
 					<div>
-						<form:input path="packageName"readonly="true" />
+						<form:input path="packageName" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageType">Package Type</label>
 					<div>
-						<form:input path="packageType"readonly="true" />
+						<form:input path="packageType" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="packageDate">Package Date</label>
 					<div>
-						<form:input path="packageDate"readonly="true" />
+						<form:input path="packageDate" readonly="true" />
 					</div>
 				</div>
 				<div>

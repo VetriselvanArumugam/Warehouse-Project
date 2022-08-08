@@ -6,15 +6,19 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="StorageDetails")
 public class StorageDetails {
 	@Id
 	@Column(name ="receipt_number")
+	@Min(value=1,message="receiptNumber is not be required")
 	private int receiptNumber;
 	@Column(name ="receipt_date")
-	private Date receiptDate;
+	@NotNull(message="receiptNumber may not be null")
+	private Date receiptDate; 
 	public int getReceiptNumber() {
 		return receiptNumber;
 	}
@@ -40,8 +44,10 @@ public class StorageDetails {
 		this.packageId = packageId;
 	}
 	@Column(name ="unit_id")
+	@Min(value=1,message="unitId is not required")
 	private int unitId;
 	@Column(name ="package_id")
+	@Min(value=1,message="unitId is not required")
 	private int packageId;
 	
 	}

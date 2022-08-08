@@ -8,6 +8,7 @@
 <title>PackageDeliveryDetails List</title>
 </head>
 <body>
+<style> background-color: #FFC0CB;</style>
 	<div id="table root">
 		<table>
 			<thead>

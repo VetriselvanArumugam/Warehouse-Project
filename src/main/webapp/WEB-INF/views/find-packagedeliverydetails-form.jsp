@@ -20,7 +20,7 @@
 				<div>
 					<label for="deliveryDate">Dlivery Date</label>
 					<div>
-						<form:input path="deliveryDate"readonly="true" />
+						<form:input path="deliveryDate" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -50,7 +50,7 @@
 				<div>
 					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
 					<div>
-						<form:input path="deliveredPhoneNumber"readonly="true" />
+						<form:input path="deliveredPhoneNumber" readonly="true" />
 					</div>
 				</div>
 				<div>

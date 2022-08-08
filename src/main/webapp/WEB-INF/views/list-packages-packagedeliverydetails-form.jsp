@@ -9,13 +9,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<style> background-color: #FFC0CB;</style>
 	<div id="root">
 		<div id="form">
 			<form:form action="" method="post" modelAttribute="getpackages">
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId"readonly="true" />
+						<form:input path="packageId" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -45,7 +46,7 @@
 				<div>
 					<label for="expiryDate">Expiry Date</label>
 					<div>
-						<form:input path="expiryDate"readonly="true" />
+						<form:input path="expiryDate" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -69,7 +70,7 @@
 				<div>
 					<label for="phoneNumber">Phone Number</label>
 					<div>
-						<form:input path="phoneNumber"readonly="true" />
+						<form:input path="phoneNumber" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -81,7 +82,7 @@
 				<div>
 					<label for="packageWeight">package Weight</label>
 					<div>
-						<form:input path="packageWeight"readonly="true" />
+						<form:input path="packageWeight" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -107,13 +108,13 @@
 				<div>
 					<label for="deliveryDate">Dlivery Date</label>
 					<div>
-						<form:input path="deliveryDate"readonly="true" />
+						<form:input path="deliveryDate" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId"readonly="true" />
+						<form:input path="unitId" readonly="true" />
 					</div>
 				</div>
 				<div>
@@ -150,7 +151,7 @@
 				<div>
 					<label for="deliveredPincode">Delivered Pincode</label>
 					<div>
-						<form:input path="deliveredPincode"readonly="true" />
+						<form:input path="deliveredPincode" readonly="true" />
 					</div>
 				</div>
 

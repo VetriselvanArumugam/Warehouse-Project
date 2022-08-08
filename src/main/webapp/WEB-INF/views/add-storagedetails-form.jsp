@@ -9,6 +9,15 @@
 <title>Add Storage Details</title>
 </head>
 <body>
+<style>
+ body {
+    background-color: AntiqueWhite;
+    text-align: center;
+}
+
+label {
+    color: Black
+    </style>
 	<div id="root">
 		<div id="form">
 			<form:form action="add" method="post" modelAttribute="addstorageDetails">

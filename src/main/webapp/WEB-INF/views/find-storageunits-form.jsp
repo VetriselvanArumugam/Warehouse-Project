@@ -21,7 +21,7 @@
 				<div>
 					<label for="unitId">unit id</label>
 					<div>
-						<form:input path="UnitId"readonly="true" />
+						<form:input path="UnitId" readonly="true" />
 					</div>
 				</div>
 				<div>

@@ -8,6 +8,7 @@
 <title>StorageUnits List</title>
 </head>
 <body>
+<style> background-color: #FFC0CB;</style>
 	<div id="table root">
 		<table border="2" width="100%" cellpadding="2">
 			<thead>

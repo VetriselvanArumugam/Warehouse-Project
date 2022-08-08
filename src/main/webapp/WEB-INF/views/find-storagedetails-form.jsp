@@ -21,13 +21,13 @@
 				<div>
 					<label for="receiptDate">Receipt Date</label>
 					<div>
-						<form:input path="receiptDate"readonly="true"/>
+						<form:input path="receiptDate" readonly="true"/>
 					</div>
 				</div>
 				<div>
 					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId"readonly="true" />
+						<form:input path="unitId" readonly="true" />
 					</div>
 				</div>
 				<div>

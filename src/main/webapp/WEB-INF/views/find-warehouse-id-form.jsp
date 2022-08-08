@@ -21,13 +21,13 @@
 				<div>
 					<label for="address">Address</label>
 					<div>
-						<form:input path="address"readonly="true" />
+						<form:input path="address" readonly="true" />
 					</div>
 				</div>
 				<div>
 					<label for="location">Location</label>
 					<div>
-						<form:input path="location"readonly="true" />
+						<form:input path="location" readonly="true" />
 					</div>
 				</div>
 				<div>

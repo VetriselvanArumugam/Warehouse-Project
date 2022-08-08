@@ -1,0 +1,58 @@
+create table warehouse(
+WAREHOUSEID    NOT NULL NUMBER(38),   
+ADDRESS        NOT NULL VARCHAR2(30) ,
+LOCATION       NOT NULL VARCHAR2(30) ,
+STATE          NOT NULL VARCHAR2(30) ,
+COUNTRY        NOT NULL VARCHAR2(30) ,
+PINCODE        NOT NULL NUMBER(38)   ,
+TOTAL_AREA     NOT NULL VARCHAR2(30) ,
+WAREHOUSE_TYPE NOT NULL VARCHAR2(30)
+);
+___________________________________________________________________________________________
+create table storage_units(
+WAREHOUSEID              NOT NULL NUMBER(38) ,
+UNIT_ID                  NOT NULL NUMBER(38) ,  
+STORAGE_TYPE             NOT NULL VARCHAR2(30) ,
+MAXIMUM_CAPACITY         NOT NULL NUMBER(38) ,  
+CURRENT_USED_CAPACITY    NOT NULL NUMBER(38) ,  
+STATUS                   NOT NULL VARCHAR2(30) ,
+LOCATION_OF_STORAGE_UNIT NOT NULL VARCHAR2(30) ,
+);
+__________________________________________________________________________________________________
+create table packages(
+PACKAGE_ID           NOT NULL NUMBER(38) ,  
+PACKAGE_NUMBER       NOT NULL NUMBER(38) ,  
+PACKAGE_NAME         NOT NULL VARCHAR2(30) ,
+PACKAGE_TYPE         NOT NULL VARCHAR2(30), 
+PACKAGE_DATE         NOT NULL DATE,         
+EXPIRY_DATE          NOT NULL DATE ,        
+STATUS               NOT NULL VARCHAR2(30) ,
+OWNER_NAME           NOT NULL VARCHAR2(30) ,
+PHONE_NUMBER         NOT NULL NUMBER  ,     
+EMAIL_ID             NOT NULL VARCHAR2(30) ,
+OWNER_AADHAAR_NUMBER NOT NULL NUMBER   ,    
+PACKAGE_WEIGHT       NOT NULL NUMBER(38)  , 
+PACKAGE_HEIGHT       NOT NULL NUMBER(38)   ,
+);
+_______________________________________________________________________________________
+create table storage_details(
+RECEIPT_NUMBER NOT NULL NUMBER ,    
+RECEIPT_DATE   NOT NULL DATE ,      
+UNIT_ID        NOT NULL NUMBER(38) ,
+PACKAGE_ID     NOT NULL NUMBER(38) ,
+);
+____________________________________________________________________________________
+create table package_delivery_details(
+DELIVERY_NUMBER          NOT NULL NUMBER ,      
+DELIVERY_DATE            NOT NULL DATE,         
+UNIT_ID                  NOT NULL NUMBER,       
+PACKAGE_ID               NOT NULL NUMBER ,      
+DELIVERED_PERSON         NOT NULL VARCHAR2(30) ,
+DELIVERED_AADHAAR_NUMBER NOT NULL NUMBER ,      
+DELIVERED_PHONE_NUMBER   NOT NULL NUMBER ,      
+DELIVERED_CITY           NOT NULL VARCHAR2(30) ,
+DELIVERED_PINCODE        NOT NULL NUMBER,
+);       
+_______________________________________________________________________________________________
+
+

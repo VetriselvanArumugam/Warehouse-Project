@@ -8,22 +8,32 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="WAREHOUSE")
 public class Warehouse {
 	@Id
 	@Column(name ="warehouseid")
+	@Min(value=1 ,message ="Id should Be 1")
 	private int warehouseId;
 	@Column(name ="address")
+	@NotNull(message="address may not be null")
 	private String address;
 	@Column(name ="location")
+	@NotNull(message="location may not be null")
 	private String location;
 	@Column(name ="state")
+	@NotNull(message="state may not be null")
 	private String state;
 	@Column(name ="country")
+	@NotNull(message="country may not be null")
 	private String country;
 	@Column(name ="pincode")
+	@Digits(integer = 6, fraction = 0)
 	private int pincode;
 	
 	@OneToMany(mappedBy ="warehouse",fetch=FetchType.LAZY)
@@ -84,8 +94,10 @@ public class Warehouse {
 		this.warehouseType = warehouseType;
 	}
 	@Column(name ="total_area")
+	@Max(value=100,message="totalArea is not be required")
 	private String totalArea;
 	@Column(name ="warehouse_type")
+	@NotNull(message="warehouseType may not be null")
 	private String warehouseType;
 	
 }
