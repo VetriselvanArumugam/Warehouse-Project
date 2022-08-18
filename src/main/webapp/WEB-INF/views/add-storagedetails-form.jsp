@@ -5,49 +5,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css"
+	href="https://codepen.io/skjha5993/pen/bXqWpR.css">
 <meta charset="ISO-8859-1">
 <title>Add Storage Details</title>
+<style>
+<%@include file="/WEB-INF/css/addstoragedetails.css"%>
+</style>
 </head>
 <body>
-<style>
- body {
-    background-color: AntiqueWhite;
-    text-align: center;
-}
+	<div class="container">
 
-label {
-    color: Black
-    </style>
-	<div id="root">
-		<div id="form">
+		<h2 class="text-center">StorageDetails Form</h2>
+		<div class="row jumbotron">
+
 			<form:form action="add" method="post" modelAttribute="addstorageDetails">
-				<div>
-					<label for="receiptNumber">Receipt Number</label>
-					<div>
-						<form:input path="receiptNumber" />
-					</div>
-				</div>
-				<div>
+				
+				<div class="col-sm-3 form-group">
 					<label for="receiptDate">Receipt Date</label>
 					<div>
-						<form:input path="receiptDate" />
+						<form:input path="receiptDate" placeholder="Receipt Date" type="date"/>
 					</div>
 				</div>
-				<div>
-					<label for="unitId">unit Id</label>
+				<form:errors path="receiptDate" class="text-box" />
+				
+				<div class="col-sm-3 form-group">
+					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId" />
+						<form:input path="unitId" placeholder="Unit Id" required="true"/>
 					</div>
 				</div>
-				<div>
+				<form:errors path="unitId" class="text-box" />
+				
+				<div class="col-sm-3 form-group">
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" />
+						<form:input path="packageId" placeholder="Package Id" required="true"/>
 					</div>
 				</div>
-				
-				<div>
-					<form:button>Add Storage Details</form:button>
+				<form:errors path="packageId" class="text-box" />
+				<div class="col-sm-7 form-group mb-3">
+					<button class="btn btn-primary float-right"> Add
+						Storage Details</button>
 				</div>
 			</form:form>
 		</div>

@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class PackagesPackageDeliveryDetailsDTO {
 @Autowired
-private Packages packages;
-public Packages getPackages() {
+private WarehousePackages packages;
+public WarehousePackages getPackages() {
 	return packages;
 }
-public void setPackages(Packages packages) {
+public void setPackages(WarehousePackages packages) {
 	this.packages = packages;
 }
 public PackageDeliveryDetails getPackageDeliveryDetails() {

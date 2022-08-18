@@ -6,17 +6,24 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>StorageDetails List</title>
+<style>
+<%@include file="/WEB-INF/css/liststoragedetails.css"%>
+</style>
 </head>
 <body>
-<style> background-color: #FFC0CB;</style>
+<p>
+		<button onclick="document.location='/home'" style="float:left">Back</button>
+	</p>
 	<div id="table root">
 		<table border="2" width="100%" cellpadding="2">
 			<thead>
 				<tr>
-					<th>receiptNumber</th>
-					<th>receiptDate</th>
-					<th>unitId</th>
-					<th>packageId</th>
+					<th style="background-color:#87CEFA">receiptNumber</th>
+					<th style="background-color:#87CEFA">receiptDate</th>
+					<th style="background-color:#87CEFA">unitId</th>
+					<th style="background-color:#87CEFA">packageId</th>
+					<th style="background-color:#87CEFA">Update</th>
+					
 				</tr>
 			</thead>
 			<tbody>
@@ -26,10 +33,14 @@
 						<td>${StorageDetails.receiptDate}</td>
 						<td>${StorageDetails.unitId}</td>
 						<td>${StorageDetails.packageId}</td>
+						<td><a href="updateform?addstorageDetails=${StorageDetails.receiptNumber}">Edit</a></td>
 						
 						
 				</c:forEach>
 		</table>
+		<div>
+	<a href="/storageDetails/addform"><button>Add Details</button></a> 
+	</div>
 	</div>
 </body>
 </html>

@@ -6,22 +6,28 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>PackageDeliveryDetails List</title>
+<style>
+<%@include file="/WEB-INF/css/listpackagedeliverydetails.css"%>
+</style>
 </head>
 <body>
-<style> background-color: #FFC0CB;</style>
+<p>
+		<button onclick="document.location='/home'" style="float:left">Back</button>
+	</p>
 	<div id="table root">
-		<table>
+		<table border="2" width="100%" cellpadding="2">
 			<thead>
 				<tr>
-					<th>deliveryNumber</th>
-					<th>deliveryDate</th>
-					<th>unitId</th>
-					<th>packageId</th>
-					<th>deliveredPerson</th>
-					<th>deliveredAadhaarNumber</th>
-					<th>deliveredPhoneNumber</th>
-					<th>deliveredCity</th>
-					<th>deliveredPincode</th>
+					<th style="background-color:#87CEFA">deliveryNumber</th>
+					<th style="background-color:#87CEFA">deliveryDate</th>
+					<th style="background-color:#87CEFA">unitId</th>
+					<th style="background-color:#87CEFA">packageId</th>
+					<th style="background-color:#87CEFA">deliveredPerson</th>
+					<th style="background-color:#87CEFA">deliveredAadhaarNumber</th>
+					<th style="background-color:#87CEFA">deliveredPhoneNumber</th>
+					<th style="background-color:#87CEFA">deliveredCity</th>
+					<th style="background-color:#87CEFA">deliveredPincode</th>
+					<th style="background-color:#87CEFA">Update</th>
 					
 				</tr>
 			</thead>
@@ -36,12 +42,15 @@
 						<td>${packagedeliverydetails.deliveredAadhaarNumber}</td>
 						<td>${packagedeliverydetails.deliveredPhoneNumber}</td>
 						<td>${packagedeliverydetails.deliveredCity}</td>
-						<td>${packagedeliverydetails.deliveredPincode}
-						
+						<td>${packagedeliverydetails.deliveredPincode}</td>
+						 <td><a href="updatepackagedeliverydetailsform?id=${packagedeliverydetails.deliveryNumber }">Edit</a></td>
 						</tr>
 				</c:forEach>
 			</tbody>
 		</table>
+	</div>
+	<div>
+	<a href="/packageDeliveryDetails/addform"><button>Add PackDelivery</button></a> 
 	</div>
 </body>
 </html>

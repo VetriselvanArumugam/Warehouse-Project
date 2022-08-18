@@ -6,26 +6,32 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Packages List</title>
+<style>
+<%@include file="/WEB-INF/css/listpackages.css"%>
+</style>
 </head>
 <body>
-<style> background-color: #FFC0CB;</style>
+<p>
+		<button onclick="document.location='/home'" style="float:left">Back</button>
+	</p>
 	<div id="table root">
-		<table>
+	<table border="2" width="100%" cellpadding="2">
 			<thead>
 				<tr>
-					<th>packageId</th>
-					<th>packageNumber</th>
-					<th>packageName</th>
-					<th>packageType</th>
-					<th>packageDate</th>
-					<th>expiryDate</th>
-					<th>status</th>
-					<th>ownerName</th>
-					<th>ownerAadhaarNumber</th>
-					<th>phoneNumber</th>
-					<th>emailId</th>
-					<th>packageWeight</th>
-					<th>packageHeight</th>
+					<th style="background-color:#87CEFA">packageId</th>
+					<th style="background-color:#87CEFA">packageNumber</th>
+					<th style="background-color:#87CEFA">packageName</th>
+					<th style="background-color:#87CEFA">packageType</th>
+					<th style="background-color:#87CEFA">packageDate</th>
+					<th style="background-color:#87CEFA">expiryDate</th>
+					<th style="background-color:#87CEFA">status</th>
+					<th style="background-color:#87CEFA">ownerName</th>
+					<th style="background-color:#87CEFA">ownerAadhaarNumber</th>
+					<th style="background-color:#87CEFA">phoneNumber</th>
+					<th style="background-color:#87CEFA">emailId</th>
+					<th style="background-color:#87CEFA">packageWeight</th>
+					<th style="background-color:#87CEFA">packageHeight</th>
+					<th style="background-color:#87CEFA">Update</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -44,10 +50,14 @@
 						<td>${packages.emailId}</td>
 						<td>${packages.packageWeight}</td>
 						<td>${packages.packageHeight}</td>
+						<td><a href="updatewarehousepackagesform?id=${Packages.PackageId}">Edit</a></td>
 						</tr>
 				</c:forEach>
 			</tbody>
 		</table>
+		<div>
+	<a href="/packages/addform"><button>Add Packages</button></a> 
+	</div>
 	</div>
 </body>
 </html>

@@ -18,6 +18,16 @@ public class StorageUnitsService {
 	    }
 
 	    public StorageUnits save(StorageUnits storageUnits) {
+	    	storageUnits=storageUnitsRepository.save(storageUnits);
+	    	int unitId=storageUnits.getUnitId();
+	    	StorageUnits sUnits=findById(unitId);
+	    	if(sUnits==null)
+	    	{
+	    		System.out.println("unitid is not available");
+	    		return null;
+	    	}
+	    	int remainingCapacity=sUnits.getMaximumCapacity()-sUnits.getCurrentUsedCapacity();
+	    	sUnits.setRemainingCapacity(remainingCapacity);
 	        return storageUnitsRepository.save(storageUnits);
 	    }
 

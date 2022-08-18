@@ -14,55 +14,55 @@
 				<div>
 					<label for="deliveryNumber">Delivery Number</label>
 					<div>
-						<form:input path="deliveryNumber" readonly="true"/>
+						<form:input path="deliveryNumber" readonly="true" placeholder="Delivery Number"/>
 					</div>
 				</div>
 				<div>
-					<label for="deliveryDate">Dlivery Date</label>
+					<label for="deliveryDate">Delivery Date</label>
 					<div>
-						<form:input path="deliveryDate" readonly="true" />
+						<form:input path="deliveryDate" readonly="true"  placeholder="Delivery Date"/>
 					</div>
 				</div>
 				<div>
 					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="unitId" readonly="true"/>
+						<form:input path="unitId" readonly="true" placeholder="Unit Id"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" readonly="true"/>
+						<form:input path="packageId" readonly="true" placeholder="Package Id"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredPerson">Delivered Person</label>
 					<div>
-						<form:input path="deliveredPerson" readonly="true"/>
+						<form:input path="deliveredPerson" readonly="true" placeholder="Delivered Person"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredAadhaarNumber">Delivered Aadhaar Number</label>
 					<div>
-						<form:input path="deliveredAadhaarNumber" readonly="true"/>
+						<form:input path="deliveredAadhaarNumber" readonly="true" placeholder="Delivered Aadhaar Number"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
 					<div>
-						<form:input path="deliveredPhoneNumber" readonly="true" />
+						<form:input path="deliveredPhoneNumber" readonly="true" placeholder="Delivered Phone Number"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredCity">Delivered City</label>
 					<div>
-						<form:input path="deliveredCity" readonly="true"/>
+						<form:input path="deliveredCity" readonly="true" placeholder="Delivered City"/>
 					</div>
 				</div>
 				<div>
 					<label for="deliveredpincode">Delivered Pincode</label>
 					<div>
-						<form:input path="deliveredpincode" readonly="true"/>
+						<form:input path="deliveredpincode" readonly="true" placeholder="Delivered Pincode"/>
 					</div>
 				</div>
 				<div>

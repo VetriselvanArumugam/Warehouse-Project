@@ -15,43 +15,43 @@
 				<div>
 					<label for="warehouseId">Warehouse Id</label>
 					<div>
-						<form:input path="warehouseId" readonly="true"/>
+						<form:input path="warehouseId" readonly="true" placeholder="Warehouse Id"/>
 					</div>
 				</div>
 				<div>
-					<label for="unitId">unit id</label>
+					<label for="unitId">Unit Id</label>
 					<div>
-						<form:input path="UnitId" readonly="true" />
+						<form:input path="UnitId" readonly="true" placeholder="Unit Id"/>
 					</div>
 				</div>
 				<div>
-					<label for="storageType">storage type</label>
+					<label for="storageType">Storage Type</label>
 					<div>
-						<form:input path="storageType" readonly="true"/>
+						<form:input path="storageType" readonly="true" placeholder="Storage Type"/>
 					</div>
 				</div>
 				<div>
-					<label for="maximumCapacity">maximum capacity</label>
+					<label for="maximumCapacity">Maximum Capacity</label>
 					<div>
-						<form:input path="maximumCapacity" readonly="true"/>
+						<form:input path="maximumCapacity" readonly="true" placeholder="Maximum Capacity"/>
 					</div>
 				</div>
 				<div>
-					<label for="currentUsedCapacity">current used capacity</label>
+					<label for="currentUsedCapacity">Current Used Capacity</label>
 					<div>
-						<form:input path="currentUsedCapacity" readonly="true"/>
+						<form:input path="currentUsedCapacity" readonly="true" placeholder="Current Used Capacity"/>
 					</div>
 				</div>
 				<div>
-					<label for="status">status</label>
+					<label for="status">Status</label>
 					<div>
-						<form:input path="status" readonly="true"/>
+						<form:input path="status" readonly="true" placeholder="Status"/>
 					</div>
 				</div>
 				<div>
-					<label for="locationOfStorageUnit">location of storage unit</label>
+					<label for="locationOfStorageUnit">Location Of Storage Unit</label>
 					<div>
-						<form:input path="locationOfStorageUnit" readonly="true"/>
+						<form:input path="locationOfStorageUnit" readonly="true" placeholder="Location Of Storage Unit"/>
 					</div>
 				
 				</div>

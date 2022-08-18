@@ -1,46 +1,55 @@
 package com.chainsys.warehouse.model;
 
-import java.util.Date;
+
+
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @Entity
 @Table(name = "package_delivery_details")
 public class PackageDeliveryDetails {
 	@Id
 	@Column(name = "delivery_number")
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "pddid")
+    @SequenceGenerator(name = "pddid", sequenceName = "pddid",  allocationSize = 10)
 	@Min(value=1,message="deliveryNumber is not be required")
+	@Max(value=10000,message="deliveryNumber is not be required")
 	private int deliveryNumber;
 	@Column(name = "delivery_date")
-	@NotNull(message="deliveryDate may not be null")
 	private Date deliveryDate;
 	@Column(name = "unit_id")
 	@Min(value=1,message="unitId is not be required")
+	@Max(value=100,message="unitId is not be required")
 	private int unitId;
 	@Column(name = "package_id")
 	@Min(value=1,message="packageId is not be required")
+	@Max(value=100,message="packageId is not be required")
 	private int packageId;
 	@Column(name = "delivered_Person")
-	@NotNull(message="deliveredPerson may not be null")
+	@Pattern(regexp = "^[A-Za-z]\\w{3,20}$", message = "*Enter valid Delivered Person")
 	private String deliveredPerson;
 	@Column(name = "delivered_aadhaar_number")
-	@Max(value=100,message="deliveredAadhaarNumber is not be required")
+	@Digits(integer = 12, fraction = 0)
 	private long deliveredAadhaarNumber;
 	@Column(name = "delivered_phone_number")
-	@Max(value=100,message="deliveredPhoneNumber is not be required")
+	@Digits(integer = 10, fraction = 0)
 	private long deliveredPhoneNumber;
 	@Column(name = "delivered_city")
-	@NotNull(message="deliveredCity may not be null")
+	@Pattern(regexp = "^[A-Za-z]\\w{3,20}$", message = "*Enter valid  Delivered City")
 	private String deliveredCity;
 	@Column(name = "delivered_pincode")
 	@Digits(integer = 6, fraction = 0)
@@ -48,13 +57,13 @@ public class PackageDeliveryDetails {
 	
 	@OneToOne(fetch =FetchType.LAZY)
 	@JoinColumn(name="package_id",nullable=false,insertable=false,updatable=false)
-	private Packages packages;
+	private WarehousePackages packages;
 
-	public Packages getPackages() {
+	public WarehousePackages getPackages() {
 		return packages;
 	}
 
-	public void setPackages(Packages packages) {
+	public void setPackages(WarehousePackages packages) {
 		this.packages = packages;
 	}
 

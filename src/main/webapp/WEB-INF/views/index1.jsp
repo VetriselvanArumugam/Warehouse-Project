@@ -8,7 +8,7 @@
 <style>
 body {
     background-image:
-        url("https://cdn.pixabay.com/photo/2015/11/06/11/48/warehouse-1026496_960_720.jpg");
+        url("https://t3.ftcdn.net/jpg/03/24/27/82/240_F_324278210_F66RPBJ4QmiIOKVQiiPggMVfBPCtJwFP.jpg");
     height: 768px;
     width: 1366px;
     background-position: center top;
@@ -53,8 +53,11 @@ body {
 	<h3 align="left">
 		<a href="/packageDeliveryDetails/list">Package Delivery Details List</a>
 	</h3>
-	<h3 align="left">
+	<h3 text-align="left">
 		<a href="/packageDeliveryDetails/addform">Package Delivery Details Add</a>
+	</h3>
+	<h3 align="left">
+		<a href="/warehouse/getwarehousestorageunits?id=1">Warehouse Storage Units List</a>
 	</h3>
 	<hr />
 	<p>
@@ -65,9 +68,6 @@ body {
 		<b>Contact:</b>+91 9025775648
 	</p>
 
-	<h3>Address:</h3>
-	<p>PLOT NO 8,
-	<p>DOOR NO 85 PONNIAMMAN NAGAR,AYANAMPAKKAM,</p>
-	<p>CHENNAI TN 600095 IN</p>
+	
 </body>
 </html>

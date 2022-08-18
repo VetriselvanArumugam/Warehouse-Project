@@ -15,49 +15,49 @@
 				<div>
 					<label for="packageId">Package Id</label>
 					<div>
-						<form:input path="packageId" readonly="true"/>
+						<form:input path="packageId" readonly="true" placeholder="Package Id"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageNumber">Package Number</label>
 					<div>
-						<form:input path="packageNumber" readonly="true" />
+						<form:input path="packageNumber" readonly="true" placeholder="Package Number"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageName">Package Name</label>
 					<div>
-						<form:input path="packageName" readonly="true" />
+						<form:input path="packageName" readonly="true" placeholder="Package Name"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageType">Package Type</label>
 					<div>
-						<form:input path="packageType" readonly="true" />
+						<form:input path="packageType" readonly="true" placeholder="Package Type"/>
 					</div>
 				</div>
 				<div>
 					<label for="packageDate">Package Date</label>
 					<div>
-						<form:input path="packageDate" readonly="true" />
+						<form:input path="packageDate" readonly="true" placeholder="Package Date"/>
 					</div>
 				</div>
 				<div>
 					<label for="expiryDate">Expiry Date</label>
 					<div>
-						<form:input path="expiryDate" readonly="true"/>
+						<form:input path="expiryDate" readonly="true" placeholder="Expiry Date"/>
 					</div>
 				</div>
 				<div>
 					<label for="status">Status</label>
 					<div>
-						<form:input path="status" readonly="true"/>
+						<form:input path="status" readonly="true" placeholder="Status"/>
 					</div>
 				</div>
 				<div>
 					<label for="ownerName">Owner Name</label>
 					<div>
-						<form:input path="ownerName" readonly="true"/>
+						<form:input path="ownerName" readonly="true" placeholder="Owner Name"/>
 					</div>
 				</div>
 				<div>

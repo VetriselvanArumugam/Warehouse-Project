@@ -2,6 +2,8 @@ package com.chainsys.warehouse.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,10 +23,34 @@ public class AdminController {
 	AdminService adminService;
 	@GetMapping("/admin")
     public String webApp(Model m) {
-        String message = "Hello World, Created the website on this Mr. @ vetriselvan ";
-        m.addAttribute("message", message);
         return "index";
     }
+	@GetMapping("/home")
+    public String homeIndex(Model m) {
+        return "home";
+    }
+	@GetMapping("/warehouseindex")
+	public String warehouseIndex() {
+		return "warehouse-index";
+	}
+	@GetMapping("/storageunitsindex")
+	public String storageUnitsIndex() {
+		return "storageunits-index";
+	}
+
+	@GetMapping("/warehousepackagesindex")
+	public String warehousePackagesIndex() {
+		return "warehousepackages-index";
+	}
+	@GetMapping("/storagedetailsindex")
+	public String storageDetailsIndex() {
+		return "storagedetails-index";
+	}
+	@GetMapping("/packagedeliverydetailsindex")
+	public String packageDeliveryDetailsIndex() {
+		return "packagedeliverydetails-index";
+	}
+	
 	@GetMapping("/index1")
     public String webAppp(Model m) {
         String message = "Hello World, Created the website on this Mr. @ vetriselvan ";
@@ -43,11 +69,12 @@ public class AdminController {
         Admin admin = adminService.getUserNamePassword(user.getUserName(), user.getPassword());
         if (admin!= null){
 
-            return "redirect:/index1";
+            return "redirect:/home";
         } else
             return "invalid-user-error";
     }
     @GetMapping("/addadmin")
+  
     public String showAddForm(Model model)
     {
         Admin theAdmin=new Admin();
@@ -55,14 +82,23 @@ public class AdminController {
         return "add-admin-form";
     }
     @PostMapping("/add")
+    
     public String addNewAdmin(@ModelAttribute("addadmin") Admin theAdmin) {
     	adminService.save(theAdmin);
         return "redirect:/list";
 }
     @GetMapping("/list")
+    
     public String getAllAdmin(Model model) {
         List<Admin> adminlist = adminService.getAdmin();
         model.addAttribute("alladmin",adminlist);
         return "list-admin-form";
+    }
+
+    @GetMapping("/about")
+    
+    public String getAbout(Model model) {
+        List<Admin> adminlist = adminService.getAdmin();
+        return "about";
     }
 }

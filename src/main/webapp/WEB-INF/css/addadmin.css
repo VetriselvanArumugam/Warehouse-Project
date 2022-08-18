@@ -1,0 +1,14 @@
+body {
+	background-image:
+		url("https://img.freepik.com/premium-vector/human-hands-hold-smartphone-with-app-management-logistic-warehouse_181313-3832.jpg?w=826");
+	background-height: 786px;
+	background-width: 1366px;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    color: Black
+    }
+div{text-align:center}

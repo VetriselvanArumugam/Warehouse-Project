@@ -1,44 +1,97 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Warehouse Index</title>
 <style>
 body {
     background-image:
-        url("https://media.istockphoto.com/photos/3d-warehouse-building-picture-id1208067405?k=20&m=1208067405&s=612x612&w=0&h=ghH14JE-TZeQVCwvbN2L7IXIOL6osI-idy9bDzd3kZQ=");
-    height: 768px;
-    width: 1366px;
-    background-position: center top;
-    background-repeat: no-repeat;
+        url("https://img.freepik.com/premium-vector/workers-loading-goods-onto-trucks-warehouse_353206-432.jpg?w=900");
+        background-height: 786px;
+    background-width: 1366px;
+    background-attachment: fixed;
     background-size: cover;
-    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.text-danger {
-    color: #e80c4d;
-    font-size: 0.9em;
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 </style>
-
 </head>
 <body>
-    <h1 align="center">Warehouse Management</h1>
-    <hr />
-    <p>Message is: ${message}</p>
-    <h3 align="center"><a href="/adminlogin">Admin Login</a></h3>
-    <h3 align="center"><a href="/addadmin">Create Admin</a></h3>
+<div class="topnav" id="myTopnav">
+  <a href="/adminlogin" class="active">Admin Login</a>
+  <a href="/addadmin">Create Admin</a>
+  <a href="/about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-    
-    <hr />
-    <p><b>Email ID:</b> vetriselvan.arumugam@chainsys.com</p>
+<div style="padding-left:16px; text-align:center;">
+  <h2>Multi Warehousing Corporation</h2>
+  <p > <em> Fast Is Fine But Accuracy Is Everyting </em> </p>
+</div>
 
-    <p><b>Contact:</b>+91 9025775648</p>
-
-    <h3>Address:</h3>
-    <p>PLOT NO 8,
-    <p>DOOR NO 85 PONNIAMMAN NAGAR,AYANAMPAKKAM,</p>
-    <p>CHENNAI TN 600095 IN</p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>

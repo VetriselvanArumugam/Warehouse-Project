@@ -9,197 +9,129 @@
 <title>Admin Login</title>
 
 <style type="text/css">
-@import "compass/css3";
-
 * {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	color: white;
-	font-size: 12px;
-	background: #333 url(/images/classy_fabric.png);
-}
-
-form {
-	background: #111;
-	width: 300px;
-	margin: 30px auto;
-	border-radius: 0.4em;
-	border: 1px solid #191919;
-	overflow: hidden;
-	position: relative;
-	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-form:after {
-	content: "";
-	display: block;
-	position: absolute;
-	height: 1px;
-	width: 100px;
-	left: 20%;
-	background: linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
-	top: 0;
-}
-
-form:before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 8px;
-	height: 5px;
-	border-radius: 50%;
-	left: 34%;
-	top: -7px;
-	box-shadow: 0 0 6px 4px #fff;
-}
-
-.inset {
-	padding: 20px;
-	border-top: 1px solid #19191a;
-}
-
-form h1 {
-	font-size: 18px;
-	text-shadow: 0 1px 0 black;
-	text-align: center;
-	padding: 15px 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
-	position: relative;
-}
-
-form h1:after {
-	content: "";
-	display: block;
-	width: 250px;
-	height: 100px;
-	position: absolute;
-	top: 0;
-	left: 50px;
-	pointer-events: none;
-	transform: rotate(70deg);
-	background: linear-gradient(50deg, rgba(255, 255, 255, 0.15),
-		rgba(0, 0, 0, 0));
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
 }
 
 label {
-	color: #666;
-	display: block;
-	padding-bottom: 9px;
-}
-
-input[type=text], input[type=password] {
-	width: 100%;
-	padding: 8px 5px;
-	background: linear-gradient(#1f2124, #27292c);
-	border: 1px solid #222;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	border-radius: 0.3em;
-	margin-bottom: 20px;
-}
-
-label[for=remember] {
-	color: white;
+	padding: 12px 12px 12px 0;
 	display: inline-block;
-	padding-bottom: 0;
-	padding-top: 5px;
 }
 
-input[type=checkbox] {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.p-container {
-	padding: 0 20px 20px 20px;
-}
-
-.p-container:after {
-	clear: both;
-	display: table;
-	content: "";
-}
-
-.p-container span {
-	display: block;
+.container {
+	margin-top: 1%;
+	margin-left: 33%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 35%;
 	float: left;
-	color: #0d93ff;
-	padding-top: 8px;
 }
 
-input[type=submit] {
-	padding: 5px 20px;
-	border: 1px solid rgba(0, 0, 0, 0.4);
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 10px 10px
-		rgba(255, 255, 255, 0.1);
-	border-radius: 0.3em;
-	background: #0184ff;
-	color: white;
-	float: right;
-	font-weight: bold;
+.col-25 {
+	float: left;
+	width: 30%;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+
+.col-75 {
+	float: left;
+	width: 55%;
+	margin-top: 6px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 18px;
 	cursor: pointer;
-	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: white;
+	background-color: #6bb6ff;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 9px #1E90FF ;
+	margin-left: 170px;
+	margin-top: 10px;
 }
 
-input[type=submit]:hover {
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -10px 10px
-		rgba(255, 255, 255, 0.1);
+.btn:hover {
+	background-color: #6bb6ff
 }
 
-input[type=text]:hover, input[type=password]:hover, label:hover ~ input[type=text],
-	label:hover ~ input[type=password] {
-	background: #27292c;
+.btn2{
+	margin-top:3%;
+	margin-left: 100px;
+    color: Dodgerblue;
+}
+.a1{
+	background-color: powderblue;
+}
+
+.btn:active {
+  background-color:     #9932CC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body {
+	background-image:
+		url("https://img.freepik.com/premium-vector/concept-illustration-cartoon-3d-style-isometric-vector-composition-with-writings-infographics-characters-warehouse-manager-professional-worker-storehouse-marketing-trade-control-person_165932-1347.jpg?w=740");
+	background-height: 786px;
+	background-width: 1366px;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 </head>
 
 <body>
-<form:form action="checkadminlogin" method="post" modelAttribute="admin">
-		<h1>User Log in</h1>
-		<div class="inset">
-			<p>
-				<label for="name">User name</label> <input type="text" name="userName"
-					id="email">
-			</p>
-			<p>
-				<label for="password">PASSWORD</label> <input type="password"
-					name="password" id="password">
-			</p>
-			<p>
-				<input type="checkbox" name="remember" id="remember"> <label
-					for="remember">Remember me for 14 days</label>
-			</p>
-		</div>
-		<p>
-			<input type="submit" name="go" id="go" value="Log in">
-		</p>
-	</form:form>
+ <h2 align="center">Admin Login</h2>
+	<div class="container">
+		<form:form action="checkadminlogin" method="post" modelAttribute="admin">
+			<div class="row">
+				<div class="col-25">
+					<label for="userName">Name</label>
+				</div>
+				<div class="col-75">
+					<form:input path="userName" placeholder="userName" required="true" />
+				</div>
+				<form:errors path="userName" cssClass="text-danger" />
+			</div>
+				<div class="row">
+				<div class="col-25">
+					<label for="password">Password</label>
+				</div>
+				<div class="col-75">
+					<form:input path="password" placeholder="Password" type="password" required="true" />
+				</div>
+				<form:errors path="password" cssClass="text-danger" />
+			</div>
+				<div class="row">
+					<form:button class="btn">Login</form:button>
+				</div>
+		</form:form>
+		<div >
+		
+	</div>
+	</div>
 	
 </body>
-<%--  <div id="root">
-        <div id="form">
-            <form:form action="checkadminlogin" method="post" modelAttribute="admin">
-                <div>
-                    <label for="UserName"> User name :</label>
-                    <div>
-                        <form:input path="userName" />
-                    </div>
-                </div>
-                <div>
-                    <label for="Password"> Password :</label>
-                    <div>
-                        <form:input path="password" />
-                    </div>
-                </div>
-                <div>
-                    <form:button> Admin Login</form:button>
-                </div>
-            </form:form>
-        </div>
-    </div> --%>
-
 </html>

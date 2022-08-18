@@ -47,6 +47,7 @@
 					<th>storageType</th>
 					<th>maximumCapacity</th>
 					<th>currentUsedCapacity</th>
+					<th>remainingCapacity</th>
 					<th>status</th>
 					<th>locationOfStorageUnit</th>
 
@@ -60,6 +61,7 @@
 						<td>${storage_units.storageType}</td>
 						<td>${storage_units.maximumCapacity}</td>
 						<td>${storage_units.currentUsedCapacity}</td>
+						<td>${storage_units.reainingCapacity}</td>
 						<td>${storage_units.status}</td>
 						<td>${storage_units.locationOfStorageUnit}</td>
 				</c:forEach>

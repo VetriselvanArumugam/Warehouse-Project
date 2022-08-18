@@ -1,58 +1,67 @@
 create table warehouse(
-WAREHOUSEID    NOT NULL NUMBER(38),   
-ADDRESS        NOT NULL VARCHAR2(30) ,
-LOCATION       NOT NULL VARCHAR2(30) ,
-STATE          NOT NULL VARCHAR2(30) ,
-COUNTRY        NOT NULL VARCHAR2(30) ,
-PINCODE        NOT NULL NUMBER(38)   ,
-TOTAL_AREA     NOT NULL VARCHAR2(30) ,
-WAREHOUSE_TYPE NOT NULL VARCHAR2(30)
+warehouseid int not null ,
+address varchar(30)not null,
+location varchar(30)not null,
+state varchar(30)not null,
+country varchar(30)not null,
+pincode int not null,
+total_area varchar(30)not null,
+warehouse_type varchar(30)not null,
+primary key (warehouseid)
 );
 ___________________________________________________________________________________________
 create table storage_units(
-WAREHOUSEID              NOT NULL NUMBER(38) ,
-UNIT_ID                  NOT NULL NUMBER(38) ,  
-STORAGE_TYPE             NOT NULL VARCHAR2(30) ,
-MAXIMUM_CAPACITY         NOT NULL NUMBER(38) ,  
-CURRENT_USED_CAPACITY    NOT NULL NUMBER(38) ,  
-STATUS                   NOT NULL VARCHAR2(30) ,
-LOCATION_OF_STORAGE_UNIT NOT NULL VARCHAR2(30) ,
+warehouseid int not null,
+unit_id int not null primary key,
+storage_type varchar(30)not null,
+maximum_capacity int not null,
+current_used_capacity int not null,
+status varchar(30) not null,
+location_of_storage_unit varchar(30) not null,
+foreign key (warehouseid) references warehouse(warehouseid)
 );
 __________________________________________________________________________________________________
-create table packages(
-PACKAGE_ID           NOT NULL NUMBER(38) ,  
-PACKAGE_NUMBER       NOT NULL NUMBER(38) ,  
-PACKAGE_NAME         NOT NULL VARCHAR2(30) ,
-PACKAGE_TYPE         NOT NULL VARCHAR2(30), 
-PACKAGE_DATE         NOT NULL DATE,         
-EXPIRY_DATE          NOT NULL DATE ,        
-STATUS               NOT NULL VARCHAR2(30) ,
-OWNER_NAME           NOT NULL VARCHAR2(30) ,
-PHONE_NUMBER         NOT NULL NUMBER  ,     
-EMAIL_ID             NOT NULL VARCHAR2(30) ,
-OWNER_AADHAAR_NUMBER NOT NULL NUMBER   ,    
-PACKAGE_WEIGHT       NOT NULL NUMBER(38)  , 
-PACKAGE_HEIGHT       NOT NULL NUMBER(38)   ,
+create table warehouse_packages(
+package_id int not null,
+package_number int not null,
+package_name varchar(30) not null,
+package_type varchar(30) not null,
+package_date date not null,
+expiry_date date not null,
+status varchar(30) not null,
+owner_name varchar(30) not null,
+phone_number number not null,
+email_id varchar(30) not null,
+owner_aadhaar_number number not null,
+package_weight int not null,
+package_height int not null,
+primary key (package_id)
 );
 _______________________________________________________________________________________
 create table storage_details(
-RECEIPT_NUMBER NOT NULL NUMBER ,    
-RECEIPT_DATE   NOT NULL DATE ,      
-UNIT_ID        NOT NULL NUMBER(38) ,
-PACKAGE_ID     NOT NULL NUMBER(38) ,
+receipt_number number not null,
+receipt_date date not null,
+unit_id int not null,
+package_id int not null,
+foreign key (unit_id) references storage_units(unit_id),
+foreign key (package_id) references warehouse_packages(package_id),
+primary key(receipt_number)
 );
 ____________________________________________________________________________________
 create table package_delivery_details(
-DELIVERY_NUMBER          NOT NULL NUMBER ,      
-DELIVERY_DATE            NOT NULL DATE,         
-UNIT_ID                  NOT NULL NUMBER,       
-PACKAGE_ID               NOT NULL NUMBER ,      
-DELIVERED_PERSON         NOT NULL VARCHAR2(30) ,
-DELIVERED_AADHAAR_NUMBER NOT NULL NUMBER ,      
-DELIVERED_PHONE_NUMBER   NOT NULL NUMBER ,      
-DELIVERED_CITY           NOT NULL VARCHAR2(30) ,
-DELIVERED_PINCODE        NOT NULL NUMBER,
-);       
+delivery_number number not null primary key,
+delivery_date date not null,
+unit_id number not null,
+package_id number not null,
+delivered_person varchar(30) not null,
+delivered_aadhaar_number number not null,
+delivered_phone_number number not null,
+delivered_city varchar(30) not null,
+delivered_pincode number not null,
+foreign key (unit_id) references storage_units(unit_id),
+foreign key (package_id) references warehouse_packages(package_id)
+);
+
 _______________________________________________________________________________________________
 
 

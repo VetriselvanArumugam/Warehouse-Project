@@ -9,42 +9,42 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chainsys.warehouse.model.PackageDeliveryDetails;
-import com.chainsys.warehouse.model.Packages;
 import com.chainsys.warehouse.model.PackagesPackageDeliveryDetailsDTO;
 import com.chainsys.warehouse.model.StorageUnits;
 import com.chainsys.warehouse.model.Warehouse;
+import com.chainsys.warehouse.model.WarehousePackages;
 import com.chainsys.warehouse.model.WarehouseStorageUnitsDTO;
 import com.chainsys.warehouse.repository.PackageDeliveryDetailsRepository;
-import com.chainsys.warehouse.repository.PackagesRepository;
+import com.chainsys.warehouse.repository.WarehousePackagesRepository;
 
 @Service
-public class PackagesService {
+public class WarehousePackagesService {
 
 	@Autowired
-	private PackagesRepository packagesRepository;
+	private WarehousePackagesRepository warehousePackagesRepository;
 	@Autowired
 	private PackageDeliveryDetailsRepository packageDeliveryDetailsRepository;
 
 
-	public List<Packages> getPackages() {
-		List<Packages> listpackages = packagesRepository.findAll();
+	public List<WarehousePackages> getPackages() {
+		List<WarehousePackages> listpackages = warehousePackagesRepository.findAll();
 		return listpackages;
 	}
 
-	public Packages save(Packages wr) {
-		return packagesRepository.save(wr);
+	public WarehousePackages save(WarehousePackages wr) {
+		return warehousePackagesRepository.save(wr);
 	}
 
-	public Packages findById(int id) {
-		return packagesRepository.findById(id);
+	public WarehousePackages findById(int id) {
+		return warehousePackagesRepository.findById(id);
 	}
 
 	public void deleteById(int id) {
-		packagesRepository.deleteById(id);
+		warehousePackagesRepository.deleteById(id);
 	}
 	 @Transactional
 	    public PackagesPackageDeliveryDetailsDTO getPackagesPackageDeliveryDetails(int id) {
-	        Packages packages = findById(id);
+	        WarehousePackages packages = findById(id);
 	        PackagesPackageDeliveryDetailsDTO packagesPackageDeliveryDetails = new PackagesPackageDeliveryDetailsDTO();
 	        packagesPackageDeliveryDetails.setPackages(packages);
 	        PackageDeliveryDetails  packageDeliveryDetails= packageDeliveryDetailsRepository.findPackageDeliveryDetailsByPackageId(id);
