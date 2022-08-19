@@ -8,6 +8,6 @@ import com.chainsys.warehouse.model.WarehousePackages;
 public interface WarehousePackagesRepository extends CrudRepository<WarehousePackages,Integer>{
 	WarehousePackages findById(int id);
 	WarehousePackages save(WarehousePackages dr);
-	void deleteById(int dr_id);
+	void deleteById(int drid);
 	List <WarehousePackages> findAll();
 }

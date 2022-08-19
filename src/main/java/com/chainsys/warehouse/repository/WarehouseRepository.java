@@ -9,7 +9,7 @@ import com.chainsys.warehouse.model.Warehouse;
 		Warehouse findById(int id);
 		Warehouse save(Warehouse dr);
 		// Used for both adding new Doctor and Modifying new Doctor
-		void deleteById(int dr_id);
+		void deleteById(int drid);
 		List <Warehouse> findAll();
 	}
 

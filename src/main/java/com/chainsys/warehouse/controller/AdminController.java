@@ -97,6 +97,6 @@ public class AdminController {
     
     public String getAbout(Model model) {
         List<Admin> adminlist = adminService.getAdmin();
-        return "about";
+        return "adminlist";
     }
 }

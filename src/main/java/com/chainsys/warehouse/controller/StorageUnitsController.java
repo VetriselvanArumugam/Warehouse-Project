@@ -15,9 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chainsys.warehouse.model.StorageUnits;
-import com.chainsys.warehouse.model.WarehouseStorageUnitsDTO;
 import com.chainsys.warehouse.service.StorageUnitsService;
-import com.chainsys.warehouse.service.WarehouseService;
 
 @Controller
 @RequestMapping("/storageunit")
@@ -27,8 +25,8 @@ public class StorageUnitsController {
 	@GetMapping("/list")
 	
 	public String getAllStorageunit(Model model) {
-		List<StorageUnits> storage_unitslist = storageUnitService.getStorageUnits();
-		model.addAttribute("allstorageunits", storage_unitslist);
+		List<StorageUnits> storageunitslist = storageUnitService.getStorageUnits();
+		model.addAttribute("allstorageunits", storageunitslist);
 		return "list-storageunits-form";
 	}
 
