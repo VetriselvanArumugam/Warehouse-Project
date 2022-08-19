@@ -3,14 +3,20 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
 <title>Warehouse Storage Units List</title>
+<style type="text/css">.table-size{
+border:2px ;
+width:100%;
+cellpadding:2px;
+ }</style>
 </head>
 <body>
 <div id="getwarehouse">
-		<table border="2" width="100%" cellpadding="2">
+		<table class="table-size">
+		<caption></caption>
 			<thead>
 				<tr>
 					<th>warehouseId</th>
@@ -22,6 +28,7 @@
 					<th>totalArea</th>
 					<th>warehouseType</th>
 				</tr>
+		
 			</thead>
 			<tbody>
 			
@@ -39,7 +46,8 @@
 				
 		</table>
 <div id="table root">
-		<table border="2" width="100%" cellpadding="2">
+		<table class="table-size">
+		<caption></caption>
 			<thead>
 				<tr>
 					<th>warehouseId</th>
@@ -67,6 +75,7 @@
 				</c:forEach>
 			</tbody>
 		</table>
+		</div>
 	</div>
 </body>
 </html>
