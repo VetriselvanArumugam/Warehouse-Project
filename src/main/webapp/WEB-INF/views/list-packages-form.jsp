@@ -6,8 +6,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Packages List</title>
-<style>
-<%@include file="/WEB-INF/css/listpackages.css"%>
+<style><%@include file="/WEB-INF/css/listpackages.css"%>
+.table-size{
+border:2px ;
+width:100%;
+cellpadding:2px;
+ }
 </style>
 </head>
 <body>
@@ -21,6 +25,7 @@
     <a href="/storageunit/list">Storage Units List</a>
     <a href="/storageDetails/list">Storage Details List</a>
     <a href="/packageDeliveryDetails/list">Package Delivery Details List</a>
+    </div>
      </li>
      </ul>
   </div>
@@ -29,7 +34,8 @@
 		<button Class="button-85" role="button" onclick="document.location='/home'" style="float:left">Home</button>
 	</p>
 	<div id="table root">
-	<table border="2" width="100%" cellpadding="2">
+	<table class="table-size">
+		<caption></caption>
 			<thead>
 				<tr>
 					<th>Package Id</th>

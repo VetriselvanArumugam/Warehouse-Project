@@ -2,15 +2,21 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
 <title>StorageUnits List</title>
-<style>
-<%@include file="/WEB-INF/css/liststorageunits.css"%>
+<style><%@include file="/WEB-INF/css/liststorageunits.css"%>
+.table-size{
+border:2px ;
+width:100%;
+cellpadding:2px;
+ }
 </style>
+ <body>
 	<div id="table root">
-		<table border="2" width="100%" cellpadding="2">
+		<table class="table-size">
+		<caption></caption>
 			<thead>
 				<tr>
 					<th>Warehouse Id</th>
@@ -26,7 +32,6 @@
 				</tr>
 			</thead>
  </head>
- <body>
  <div>
 <ul>
  <li class="dropdown">
@@ -36,10 +41,11 @@
     <a href="/packages/list">Warehouse Packages List</a>
     <a href="/storageDetails/list">Storage Details List</a>
     <a href="/packageDeliveryDetails/list">Package Delivery Details List</a>
+    </div>
      </li>
      </ul>
   </div>
-  </div>
+  
 <p>
 		<button Class="button-85" role="button" onclick="document.location='/home'" style="float:left">Home</button>
 	</p>

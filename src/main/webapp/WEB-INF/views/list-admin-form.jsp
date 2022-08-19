@@ -7,12 +7,20 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>List Admin</title>
+<style>
+background-color: #FFC0CB;
+.table-size{
+border:2px ;
+width:100%;
+cellpadding:2px;
+ }
+</style>
 </head>
 <body>
-<style> background-color: #FFC0CB;</style>
 	<div id="table root">
-		<table border="2" width="100%" cellpadding="2">
-		<
+		<table class="table-size" >
+		<caption></caption>
+		
 			<thead>
 				<tr>
 					<th>userName</th>

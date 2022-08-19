@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Index</title>
 <style>
 body {
     background-image:
@@ -74,7 +75,7 @@ body {
   <a href="/addadmin">Create Admin</a>
   <a href="/about">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <em class="fa fa-bars"></em>
   </a>
 </div>
 
