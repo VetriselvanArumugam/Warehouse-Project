@@ -1,6 +1,5 @@
 package com.chainsys.warehouse.service;
 
-import java.util.Iterator;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -10,10 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.chainsys.warehouse.model.PackageDeliveryDetails;
 import com.chainsys.warehouse.model.PackagesPackageDeliveryDetailsDTO;
-import com.chainsys.warehouse.model.StorageUnits;
-import com.chainsys.warehouse.model.Warehouse;
 import com.chainsys.warehouse.model.WarehousePackages;
-import com.chainsys.warehouse.model.WarehouseStorageUnitsDTO;
 import com.chainsys.warehouse.repository.PackageDeliveryDetailsRepository;
 import com.chainsys.warehouse.repository.WarehousePackagesRepository;
 
@@ -27,8 +23,7 @@ public class WarehousePackagesService {
 
 
 	public List<WarehousePackages> getPackages() {
-		List<WarehousePackages> listpackages = warehousePackagesRepository.findAll();
-		return listpackages;
+		return warehousePackagesRepository.findAll();
 	}
 
 	public WarehousePackages save(WarehousePackages wr) {

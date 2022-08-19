@@ -13,22 +13,35 @@
 		<table border="2" width="100%" cellpadding="2">
 			<thead>
 				<tr>
-					<th style="background-color:#87CEFA">warehouseId</th>
-					<th style="background-color:#87CEFA">unitId</th>
-					<th style="background-color:#87CEFA">storageType</th>
-					<th style="background-color:#87CEFA">maximumCapacity</th>
-					<th style="background-color:#87CEFA">currentUsedCapacity</th>
-					<th style="background-color:#87CEFA">remainingCapacity</th>
-					<th style="background-color:#87CEFA">status</th>
-					<th style="background-color:#87CEFA">locationOfStorageUnit</th>
-					<th style="background-color:#87CEFA">Update</th>
+					<th>Warehouse Id</th>
+					<th>Unit Id</th>
+					<th>Storage Type</th>
+					<th>Maximum Capacity</th>
+					<th>Current Used Capacity</th>
+					<th>Remaining Capacity</th>
+					<th>Status</th>
+					<th>Location Of Storage Unit</th>
+					<th>Update</th>
 
 				</tr>
 			</thead>
  </head>
  <body>
+ <div>
+<ul>
+ <li class="dropdown">
+    <a class="dropbtn">Lists</a>
+    <div class="dropdown-content">
+    <a href="/warehouse/list">Warehouse List</a>
+    <a href="/packages/list">Warehouse Packages List</a>
+    <a href="/storageDetails/list">Storage Details List</a>
+    <a href="/packageDeliveryDetails/list">Package Delivery Details List</a>
+     </li>
+     </ul>
+  </div>
+  </div>
 <p>
-		<button onclick="document.location='/home'" style="float:left">Back</button>
+		<button Class="button-85" role="button" onclick="document.location='/home'" style="float:left">Home</button>
 	</p>
 			<tbody>
 				<c:forEach var="storage_units" items="${allstorageunits}">
@@ -46,7 +59,7 @@
 			</tbody>
 		</table>
 		<div>
-	<a href="/storageunit/addform"><button>Add Units</button></a> 
+	<a href="/storageunit/addform"><button class="button-29" role="button">Add Units</button></a>
 	</div>
 	</div>
 </body>

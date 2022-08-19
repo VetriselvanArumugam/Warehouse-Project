@@ -13,8 +13,7 @@ public class PackageDeliveryDetailsService {
 	    private PackageDeliveryDetailsRepository packageDeliveryDetailsRepository;
 	    
 	    public List<PackageDeliveryDetails> getPackageDelivaryDetails() {
-	        List<PackageDeliveryDetails> listpackageDeliveryDetails = packageDeliveryDetailsRepository.findAll();
-	        return listpackageDeliveryDetails;
+	        return packageDeliveryDetailsRepository.findAll();
 	    }
 
 	    public PackageDeliveryDetails save(PackageDeliveryDetails packageDeliveryDetails) {

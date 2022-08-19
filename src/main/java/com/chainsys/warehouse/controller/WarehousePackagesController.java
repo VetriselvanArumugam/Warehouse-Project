@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chainsys.warehouse.model.PackagesPackageDeliveryDetailsDTO;
 import com.chainsys.warehouse.model.WarehousePackages;
-import com.chainsys.warehouse.model.WarehouseStorageUnitsDTO;
 import com.chainsys.warehouse.service.WarehousePackagesService;
 
 @Controller

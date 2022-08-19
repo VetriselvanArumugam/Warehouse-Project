@@ -21,8 +21,7 @@ public class WarehouseService {
 	    @Autowired
 	    private StorageUnitsRepository storageUnitsRepository ;
 	    public List<Warehouse> getWarehouse() {
-	        List<Warehouse> listWarehouse = warehouseRepository.findAll();
-	        return listWarehouse;
+	        return warehouseRepository.findAll();
 	    }
 
 	    public Warehouse save(Warehouse warehouse) {

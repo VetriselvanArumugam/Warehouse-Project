@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
 <title>Packages List</title>
@@ -11,27 +11,41 @@
 </style>
 </head>
 <body>
+<div>
+<div>
+<ul>
+ <li class="dropdown">
+    <a class="dropbtn">Lists</a>
+    <div class="dropdown-content">
+    <a href="/warehouse/list">Warehouse List</a>
+    <a href="/storageunit/list">Storage Units List</a>
+    <a href="/storageDetails/list">Storage Details List</a>
+    <a href="/packageDeliveryDetails/list">Package Delivery Details List</a>
+     </li>
+     </ul>
+  </div>
+  </div>
 <p>
-		<button onclick="document.location='/home'" style="float:left">Back</button>
+		<button Class="button-85" role="button" onclick="document.location='/home'" style="float:left">Home</button>
 	</p>
 	<div id="table root">
 	<table border="2" width="100%" cellpadding="2">
 			<thead>
 				<tr>
-					<th style="background-color:#87CEFA">packageId</th>
-					<th style="background-color:#87CEFA">packageNumber</th>
-					<th style="background-color:#87CEFA">packageName</th>
-					<th style="background-color:#87CEFA">packageType</th>
-					<th style="background-color:#87CEFA">packageDate</th>
-					<th style="background-color:#87CEFA">expiryDate</th>
-					<th style="background-color:#87CEFA">status</th>
-					<th style="background-color:#87CEFA">ownerName</th>
-					<th style="background-color:#87CEFA">ownerAadhaarNumber</th>
-					<th style="background-color:#87CEFA">phoneNumber</th>
-					<th style="background-color:#87CEFA">emailId</th>
-					<th style="background-color:#87CEFA">packageWeight</th>
-					<th style="background-color:#87CEFA">packageHeight</th>
-					<th style="background-color:#87CEFA">Update</th>
+					<th>Package Id</th>
+					<th>package Number</th>
+					<th>package Name</th>
+					<th>PackageType</th>
+					<th>Package Date</th>
+					<th>Expiry Date</th>
+					<th>Status</th>
+					<th>Owner Name</th>
+					<th>Owner Aadhaar Number</th>
+					<th>Phone Number</th>
+					<th>Email Id</th>
+					<th>Package Weight</th>
+					<th>Package Height</th>
+					<th>Update</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -56,7 +70,7 @@
 			</tbody>
 		</table>
 		<div>
-	<a href="/packages/addform"><button>Add Packages</button></a> 
+	<a href="/packages/addform"><button class="button-29" role="button">Add Packages</button></a>
 	</div>
 	</div>
 </body>

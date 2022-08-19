@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chainsys.warehouse.model.Admin;
-import com.chainsys.warehouse.model.Warehouse;
 import com.chainsys.warehouse.repository.AdminRepository;
 @Service
 public class AdminService {
@@ -21,8 +20,7 @@ public class AdminService {
 		return adminRepository.save(ad);
 	}
 	 public List<Admin> getAdmin() {
-	        List<Admin> listAdmin =adminRepository.findAll();
-	        return listAdmin;
+	        return adminRepository.findAll();
 	    }
 	
 }
