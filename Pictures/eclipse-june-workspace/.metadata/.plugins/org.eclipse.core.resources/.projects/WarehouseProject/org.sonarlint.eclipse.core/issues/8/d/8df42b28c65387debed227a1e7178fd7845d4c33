@@ -1,0 +1,14 @@
+
+x
+java:S4684?"@Replace this persistent entity with a simple POJO or DTO object.(Ί¦Κ΅ώÿÿÿÿH¨ΝRCRITICALZVULNERABILITY
+x
+java:S4684*"@Replace this persistent entity with a simple POJO or DTO object.(ώ»‰νϋÿÿÿÿH©ΝRCRITICALZVULNERABILITY
+Ά
+java:S1845?"nRename method "updateStorageDetails" to prevent any misunderstanding/clash with method "updatestoragedetails".(Ί¦Κ΅ώÿÿÿÿHªΝRBLOCKERZ
+CODE_SMELL
+“
+java:S1192/"^Define a constant instead of duplicating this literal "redirect:/storageDetails/list" 3 times.(€σφ¤ώÿÿÿÿH¬ΝRCRITICALZ
+CODE_SMELL
+
+java:S1845L"nRename method "deletestorageDetails" to prevent any misunderstanding/clash with method "deletestoragedetails".(„φ¬τH°ΝRBLOCKERZ
+CODE_SMELL

@@ -1,0 +1,14 @@
+
+x
+java:S4684("@Replace this persistent entity with a simple POJO or DTO object.(Î³…ŠýÿÿÿÿH²ÍRCRITICALZVULNERABILITY
+²
+java:S1845="~Rename method "updatePackageDeliveryDetails" to prevent any misunderstanding/clash with method "updatepackagedeliverydetails".(óÇŽÊûÿÿÿÿH³ÍRBLOCKERZ
+CODE_SMELL
+­
+java:S1845J"~Rename method "deletepackageDeliveryDetails" to prevent any misunderstanding/clash with method "deletepackagedeliverydetails".(ñÉÑÉHµÍRBLOCKERZ
+CODE_SMELL
+x
+java:S4684="@Replace this persistent entity with a simple POJO or DTO object.(óÇŽÊûÿÿÿÿH·ÍRCRITICALZVULNERABILITY
+›
+java:S1192-"fDefine a constant instead of duplicating this literal "redirect:/packageDeliveryDetails/list" 3 times.(ðÍœÎþÿÿÿÿH¸ÍRCRITICALZ
+CODE_SMELL

@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Packages List</title>
+<style>
+<%@include file="/WEB-INF/css/listpackages.css"%>
+</style>
+</head>
+<body>
+<p>
+		<button onclick="document.location='/home'" style="float:left">Back</button>
+	</p>
+	<div id="table root">
+	<table border="2" width="100%" cellpadding="2">
+			<thead>
+				<tr>
+					<th style="background-color:#87CEFA">Package Id</th>
+					<th style="background-color:#87CEFA">package Number</th>
+					<th style="background-color:#87CEFA">package Name</th>
+					<th style="background-color:#87CEFA">PackageType</th>
+					<th style="background-color:#87CEFA">Package Date</th>
+					<th style="background-color:#87CEFA">Expiry Date</th>
+					<th style="background-color:#87CEFA">Status</th>
+					<th style="background-color:#87CEFA">Owner Name</th>
+					<th style="background-color:#87CEFA">Owner Aadhaar Number</th>
+					<th style="background-color:#87CEFA">Phone Number</th>
+					<th style="background-color:#87CEFA">Email Id</th>
+					<th style="background-color:#87CEFA">Package Weight</th>
+					<th style="background-color:#87CEFA">Package Height</th>
+					<th style="background-color:#87CEFA">Update</th>
+				</tr>
+			</thead>
+			<tbody>
+				<c:forEach var="packages" items="${allpackages}">
+					<tr>
+						<td>${packages.packageId}</td>
+						<td>${packages.packageNumber}</td>
+						<td>${packages.packageName}</td>
+						<td>${packages.packageType}</td>
+						<td>${packages.packageDate}</td>
+						<td>${packages.expiryDate}</td>
+						<td>${packages.status}</td>
+						<td>${packages.ownerName}</td>
+						<td>${packages.ownerAadhaarNumber}
+						<td>${packages.phoneNumber}</td>
+						<td>${packages.emailId}</td>
+						<td>${packages.packageWeight}</td>
+						<td>${packages.packageHeight}</td>
+						<td><a href="updatewarehousepackagesform?id=${Packages.PackageId}">Edit</a></td>
+						</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+		<div>
+	<a href="/packages/addform"><button>Add Packages</button></a> 
+	</div>
+	</div>
+</body>
+</html>

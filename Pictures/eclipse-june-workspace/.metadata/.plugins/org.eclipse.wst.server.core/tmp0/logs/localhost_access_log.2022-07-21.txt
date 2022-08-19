@@ -1,0 +1,2 @@
+127.0.0.1 - - [21/Jul/2022:12:14:58 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [21/Jul/2022:12:14:58 +0530] "GET /springmvc/WEB-INF/views/find-doctor-form.jsp HTTP/1.1" 404 682

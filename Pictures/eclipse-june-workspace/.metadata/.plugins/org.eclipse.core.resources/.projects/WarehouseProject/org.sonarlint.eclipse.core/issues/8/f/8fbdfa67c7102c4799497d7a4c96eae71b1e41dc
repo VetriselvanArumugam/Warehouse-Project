@@ -1,0 +1,22 @@
+
+~
+java:S1128"RRemove this unused import 'com.chainsys.warehouse.model.WarehouseStorageUnitsDTO'.(íß»*H™ÍRMINORZ
+CODE_SMELL
+™
+java:S1845O"jRename method "deleteStorageUnits" to prevent any misunderstanding/clash with method "deletestorageunits".(¬º÷¦H›ÍRBLOCKERZ
+CODE_SMELL
+~
+java:S1128"LRemove this unused import 'com.chainsys.warehouse.service.WarehouseService'.(õæóØıÿÿÿÿHÍRMINORZ
+CODE_SMELL
+‹
+java:S11922"[Define a constant instead of duplicating this literal "redirect:/storageunit/list" 3 times.(è¸ÀİHŸÍRCRITICALZ
+CODE_SMELL
+}	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†“ÍH£ÍRMINORZ
+CODE_SMELL
+x
+java:S4684-"@Replace this persistent entity with a simple POJO or DTO object.(µéªßùÿÿÿÿH¤ÍRCRITICALZVULNERABILITY
+™
+java:S1845B"jRename method "updateStorageUnits" to prevent any misunderstanding/clash with method "updatestorageunits".(Ò¬ÒÒH¥ÍRBLOCKERZ
+CODE_SMELL
+s
+java:S4684B"@Replace this persistent entity with a simple POJO or DTO object.(Ò¬ÒÒH§ÍRCRITICALZVULNERABILITY

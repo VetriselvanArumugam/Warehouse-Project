@@ -1,0 +1,42 @@
+1659328536515	Rename resource 'view'
+1659330440141	Rename resource 'add-doctor-form.jsp'
+1659331404496	Copy file
+1659332266788	Rename resource 'update-doctor-form.jsp'
+1659347393033	Rename package 'com.chainsys.warehouse.pojo'
+1659348350516	Rename resource 'add-storageunit-form.jsp'
+1659348586875	Rename resource 'update-storageunts-form.jsp'
+1659354409628	Rename resource 'list-storageunits-form.jsp'
+1659354494084	Rename resource 'list-stotageunits-flist-stotageunits-form.jsp'
+1659354510424	Rename resource 'list-.jsp'
+1659355395495	Delete element
+1659421451297	Rename resource 'list-stotageunits-form.jsp'
+1659585154409	Rename resource 'add-packagedelivarydetails-form.jsp'
+1659585170950	Rename resource 'find-packagedelivarydetails-form.jsp'
+1659585192897	Rename resource 'list-packagedelivarydetails-form.jsp'
+1659585211977	Rename resource 'update-packagedelivarydetails-form.jsp'
+1659585386470	Rename resource 'add-packagedeliverydetails-form.jsp'
+1659585401101	Rename resource 'find-packagedeliverydetails-form.jsp'
+1659585414213	Rename resource 'list-packagedeliverydetails-form.jsp'
+1659585430448	Rename resource 'update-packagedeliverydetails-form.jsp'
+1659593721638	Delete element
+1659593751408	Delete element
+1659593761290	Delete element
+1659593769118	Delete element
+1659593776867	Delete element
+1659593782795	Delete element
+1659593930834	Rename type 'PackageDeliveryDetails'
+1659593968225	Rename type 'PackageDelivaryDetailsRepository'
+1659593990908	Rename type 'PackageDelivaryDetailsService'
+1659596274188	Copy file
+1659596359587	Copy file
+1659600465089	Copy file
+1659600488733	Copy file
+1659601038985	Delete element
+1659601466279	Delete element
+1659601521817	Delete element
+1659601702332	Delete element
+1659603396572	Delete element
+1659683006341	Rename type 'PackagesPackageDeliveryDetails'
+1659774968192	Delete element
+1659784590869	Rename resource 'WM.txt'
+1659786161504	Rename resource 'list-admin-form.jsp'

@@ -1,0 +1,7 @@
+
+q
+java:S1128	"CRemove this unused import 'com.chainsys.warehouse.model.Warehouse'.(±Ÿ¿²øÿÿÿÿRMINORZ
+CODE_SMELL
+Š
+java:S1488"aImmediately return this expression instead of assigning it to the temporary variable "listAdmin".(º¡ôÐRMINORZ
+CODE_SMELL

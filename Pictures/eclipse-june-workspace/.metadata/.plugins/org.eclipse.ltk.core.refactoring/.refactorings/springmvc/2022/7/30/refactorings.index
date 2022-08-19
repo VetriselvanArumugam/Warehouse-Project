@@ -1,0 +1,15 @@
+1658307276538	Delete element
+1658307317761	Rename package 'com.chainsys.commonutil'
+1658307395731	Rename package 'com.chainsys.jspproject.dao'
+1658307445725	Rename package 'com.chainsys.jspproject.pojo'
+1658311496348	Rename resource 'list-customers.jsp'
+1658376067819	Delete element
+1658376074296	Delete element
+1658376195512	Delete element
+1658376226966	Rename type 'DoctorService'
+1658376598948	Delete element
+1658395308133	Delete element
+1658395576195	Delete element
+1658395748596	Copy package
+1658395759057	Delete element
+1658402948316	Encapsulate field 'doctor'

@@ -1,0 +1,13 @@
+
+~
+java:S1128"RRemove this unused import 'com.chainsys.warehouse.model.WarehouseStorageUnitsDTO'.(íß»*H¼ÍRMINORZ
+CODE_SMELL
+”	java:S116"cRename this field "WarehousePackagesService" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôï„—úÿÿÿÿH¾ÍRMINORZ
+CODE_SMELL
+
+java:S11921"XDefine a constant instead of duplicating this literal "redirect:/packages/list" 3 times.(ñøƒÿÿÿÿÿH¿ÍRCRITICALZ
+CODE_SMELL
+s
+java:S4684,"@Replace this persistent entity with a simple POJO or DTO object.(î¶ŸõHÃÍRCRITICALZVULNERABILITY
+s
+java:S4684A"@Replace this persistent entity with a simple POJO or DTO object.(¸¿ö”HÄÍRCRITICALZVULNERABILITY

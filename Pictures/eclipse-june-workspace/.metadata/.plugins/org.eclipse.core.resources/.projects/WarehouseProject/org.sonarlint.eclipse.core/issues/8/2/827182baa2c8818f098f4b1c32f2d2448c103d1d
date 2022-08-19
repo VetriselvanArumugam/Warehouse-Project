@@ -1,0 +1,7 @@
+
+]
+java:S19050"/Remove this unnecessary cast to "StorageUnits".(äªøÕúÿÿÿÿRMINORZ
+CODE_SMELL
+“
+java:S1488"eImmediately return this expression instead of assigning it to the temporary variable "listWarehouse".(ÆþèÄøÿÿÿÿRMINORZ
+CODE_SMELL

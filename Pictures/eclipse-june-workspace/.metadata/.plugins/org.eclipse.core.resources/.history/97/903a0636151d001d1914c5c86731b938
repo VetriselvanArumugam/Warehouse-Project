@@ -1,0 +1,108 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Warehouse</title>
+<style> body {
+    background-image:
+        url("https://c1.wallpaperflare.com/preview/661/326/378/black-business-desk-diary.jpg");
+        background-height: 786px;
+    background-width: 1366px;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}</style>
+
+</head>
+<body>
+<p>
+		<button onclick="document.location='/home'" style="float:left">Back</button>
+	</p>
+	<div id="root">
+		<div id="form">
+			<form:form action="update" method="post" modelAttribute="updatewarehouse">
+			
+				<div>
+					<label for="warehouseId">Warehouse Id</label>
+					<div>
+						<form:input path="warehouseId" placeholder="Warehouse Id"/>
+					</div>
+				</div>
+				<form:errors path="warehouseId" class="text-box" />
+				
+				<div>
+					<label for="address">Address</label>
+					<div>
+						<form:input path="address" placeholder="Address" title="Address can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="address" class="text-box" />
+				
+				<div>
+					<label for="location">Location</label>
+					<div>
+						<form:input path="location" placeholder="Location" title="Location can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="location" class="text-box" />
+				
+				<div>
+					<label for="state">State</label>
+					<div>
+						<form:input path="state" placeholder="State" title="State can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="state" class="text-box" />
+				
+				<div>
+					<label for="country">Country</label>
+					<div>
+						<form:input path="country" placeholder="Country" title="Country can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="country" class="text-box" />
+				
+				<div>
+					<label for="pincode">Pincode</label>
+					<div>
+						<form:input path="pincode" placeholder="Pincode" pattern="[1-9]{1}[0-9]{6}"
+title="Pincode should have atleast 6 digits"
+required="true"/>
+					</div>
+				</div>
+				<form:errors path="pincode" class="text-box" />
+				
+				<div>
+					<label for="totalArea">Total Area</label>
+					<div>
+						<form:input path="totalArea" placeholder="Total Area" pattern="[1-9]{1}[0-9]{5}"
+title="Total Area should have atleast 5 digits"
+required="true" />
+					</div>
+				</div>
+				<form:errors path="totalArea" class="text-box" />
+				
+				<div>
+					<label for="warehouseType">Warehouse Type</label>
+					<div>
+						<form:input path="warehouseType" placeholder="Warehouse Type" title="Warehouse Type can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<div>
+				<form:errors path="warehouseType" class="text-box" />
+					<form:button>Update Warehouse</form:button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</body>
+</html>

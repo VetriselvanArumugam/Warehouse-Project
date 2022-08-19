@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Warehouse Index</title>
+<style>
+body {
+    background-image:
+        url("https://c4.wallpaperflare.com/wallpaper/790/91/622/anime-original-dinosaur-warehouse-wallpaper-preview.jpg");
+    height: 768px;
+    width: 1366px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.text-danger {
+    color: #e80c4d;
+    font-size: 0.9em;
+}
+</style>
+
+</head>
+<body>
+    <h1 align="center" style="color:#f8f8f8;"> Distribution World </h1>
+    <hr />
+    <p>Message is: ${message}</p>
+    <h3 align="center"><a href="/adminlogin">Admin Login</a></h3>
+    <h3 align="center"><a href="/addadmin">Create Admin</a></h3>
+
+    
+    <hr />
+    <p><b>Email ID:</b> vetriselvan.arumugam@chainsys.com</p>
+
+    <p><b>Contact:</b>+91 9025775648</p>
+
+    
+</body>
+</html>

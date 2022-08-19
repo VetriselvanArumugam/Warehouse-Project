@@ -1,0 +1,27 @@
+package com.chainsys.bestPractices.decoupled;
+
+// Objects of this class can work only with any engine, and with any wheel
+// The car class is decoupled from PetrolEngine class, and SteelWheel class
+public class Car {
+
+	private Iengine engine; // Early bound with Engine interface
+	private Iwheel[] wheels; // Early bound with Wheel interface
+	// The type of engine, and the type of wheel will be injected to the car class
+	// At runtime using the constructors, This is called as constructor based dependency injection.
+	
+	public Car(Iengine engine, Iwheel[] wheel) {
+		this.engine = engine;
+		this.wheels = wheel;
+	}
+	public void startCar() {
+		engine.start();
+		wheels[0].rotate();
+		wheels[1].rotate();
+		wheels[2].rotate();
+		wheels[3].rotate();
+	}
+
+	public Iwheel[] getWheel() {
+		return this.wheels;
+	}
+}

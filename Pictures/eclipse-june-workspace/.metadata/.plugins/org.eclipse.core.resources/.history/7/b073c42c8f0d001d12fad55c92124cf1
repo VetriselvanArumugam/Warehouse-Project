@@ -1,0 +1,16 @@
+package com.chainsys.warehouse.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.chainsys.warehouse.model.*;
+
+/**
+ * @author vetr3140
+ */
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long>
+{
+	
+}

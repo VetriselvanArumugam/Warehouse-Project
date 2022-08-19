@@ -1,0 +1,155 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Packages</title>
+<style>
+body {
+	background-image:
+		url("https://c1.wallpaperflare.com/preview/661/326/378/black-business-desk-diary.jpg");
+	background-height: 786px;
+	background-width: 1366px;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+	<div id="root">
+		<div id="form">
+			<form:form action="update" method="post"
+				modelAttribute="updatepackages">
+				<form:errors path="packageId" class="text-box" />
+				<div>
+					<label for="packageId">Package Id</label>
+					<div>
+						<form:input path="packageId" placeholder="Package Id"
+							required="true" />
+					</div>
+				</div>
+				<form:errors path="packageNumber" class="text-box" />
+				<div>
+					<label for="packageNumber">Package Number</label>
+					<div>
+						<form:input path="packageNumber" placeholder="Package Number"
+							placeholder="Package Number" pattern="[1-9]{1}[0-9]{3}"
+							title="Package Number should have atleast 3 digits"
+							required="true" />
+					</div>
+				</div>
+				<form:errors path="packageName" class="text-box" />
+				<div>
+					<label for="packageName">Package Name</label>
+					<div>
+						<form:input path="packageName" placeholder="Package Name"
+							placeholder="Package Name"
+							title="Package Name can't be empty or must contain only alphabets"
+							pattern="^[a-zA-Z]+$" required="true" />
+					</div>
+				</div>
+				<form:errors path="packageType" class="text-box" />
+				<div>
+					<label for="packageType">Package Type</label>
+					<div>
+						<form:input path="packageType" placeholder="Package Type"
+							placeholder="Package Type"
+							title="Package Type can't be empty or must contain only alphabets"
+							pattern="^[a-zA-Z]+$" required="true" />
+					</div>
+				</div>
+				<form:errors path="packageDate" class="text-box" />
+				<div>
+					<label for="packageDate">Package Date</label>
+					<div>
+						<form:input path="packageDate" placeholder="Package Date" />
+					</div>
+				</div>
+				<form:errors path="expiryDate" class="text-box" />
+				<div>
+					<label for="expiryDate">Expiry Date</label>
+					<div>
+						<form:input path="expiryDate" placeholder="Expiry Date" />
+					</div>
+				</div>
+				<div>
+					<label for="status" class="label-size">Status</label>
+					<div>
+						<form:select path="status" class="text-box" placeholder="Status"
+							title="Status  Type can't be empty or must contain only alphabets"
+							pattern="^[a-zA-Z]+$" required="true">
+							<form:option value="Done">Done</form:option>
+							<form:option value="WorkingProgress">Working Progress</form:option>
+						</form:select>
+					</div>
+				</div>
+				<form:errors path="status" class="text-box" />
+				<form:errors path="ownerName" class="text-box" />
+				<div>
+					<label for="ownerName">Owner Name</label>
+					<div>
+						<form:input path="ownerName" placeholder="Owner Name"
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" />
+					</div>
+				</div>
+				<form:errors path="ownerAadhaarNumber" class="text-box" />
+				<div>
+					<label for="ownerAadhaarNumber">Owner Aadhaar Number</label>
+					<div>
+						<form:input path="ownerAadhaarNumber"
+							placeholder="Owner Aadhaar Number"
+							placeholder="Owner Aadhaar Number" pattern="[1-9]{1}[0-9]{12}"
+							title="Owner Aadhaar Number should have atleast 12 digits"
+							required="true" />
+					</div>
+				</div>
+				<form:errors path="phoneNumber" class="text-box" />
+				<div>
+					<label for="phoneNumber">Phone Number</label>
+					<div>
+						<form:input path="phoneNumber" placeholder="Phone Number"
+							pattern="[1-9]{1}[0-9]{10}"
+							title="Phone Number should have atleast 10 digits"
+							required="true" />
+					</div>
+				</div>
+				<form:errors path="emailId" class="text-box" />
+				<div>
+					<label for="emailId">Email Id</label>
+					<div>
+						<form:input path="emailId" placeholder="Email Id"
+							pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$"
+							title="Enter valid email ex: example@gmail.com" required="true" />
+					</div>
+				</div>
+				<form:errors path="packageWeight" class="text-box" />
+				<div>
+					<label for="packageWeight">Package Weight</label>
+					<div>
+						<form:input path="packageWeight" placeholder="Package Weight"
+							pattern="[1-9]{1}[0-9]{7}"
+							title="Package Weight should have atleast 7 digits"
+							required="true" />
+					</div>
+				</div>
+				<form:errors path="packageHeight" class="text-box" />
+				<div>
+					<label for="packageHeight">Package Height</label>
+					<div>
+						<form:input path="packageHeight" placeholder="Package Height"
+							pattern="[1-9]{1}[0-9]{7}"
+							title="Package Height should have atleast 7 digits"
+							required="true" />
+					</div>
+				</div>
+				<div>
+					<form:button>Update Packages</form:button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</body>
+</html>

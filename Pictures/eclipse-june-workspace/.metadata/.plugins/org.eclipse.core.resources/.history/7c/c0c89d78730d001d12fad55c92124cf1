@@ -1,0 +1,5 @@
+package com.chainsys.warehouse.repository;
+
+public class CustomerRepository {
+
+}

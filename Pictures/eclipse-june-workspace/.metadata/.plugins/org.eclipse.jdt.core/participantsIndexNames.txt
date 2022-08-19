@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2833283099.index
+\WarehouseProject\src\main\java
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4251814032.index
+\oakApp\src\main\java
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1446278970.index
+\springmvc\src\test\java
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2678476427.index
+\FirstJSPproject\src\main\java
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1397938697.index
+\oakApp\src\main\java
+C:\Users\vetr3140\Pictures\eclipse-june-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\154692223.index
+\FirstJSPproject\src\main\java

@@ -1,0 +1,101 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Package Delivery Details</title>
+<style> body {
+    background-image:
+        url("https://c1.wallpaperflare.com/preview/896/809/244/paper-texture-winter-color.jpg");
+        background-height: 786px;
+    background-width: 1366px;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}</style>
+</head>
+<body>
+	<div id="root">
+		<div id="form">
+			<form:form action="update" method="post" modelAttribute="updatepackageDeliveryDetails">
+			<form:errors path="deliveryNumber" class="text-box" />
+				<div>
+					<label for="deliveryNumber">Delivery Number</label>
+					<div>
+						<form:input path="deliveryNumber" placeholder="Delivery Number" required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveryDate" class="text-box" />
+				<div>
+					<label for="deliveryDate">Delivery Date</label>
+					<div>
+						<form:input path="deliveryDate" placeholder="Delivery Date"/>
+					</div>
+				</div>
+				<form:errors path="unitId" class="text-box" />
+				<div>
+					<label for="unitId">Unit Id</label>
+					<div>
+						<form:input path="unitId" placeholder="Unit Id" required="true"/>
+					</div>
+				</div>
+				<form:errors path="packageId" class="text-box" />
+				<div>
+					<label for="packageId">Package Id</label>
+					<div>
+						<form:input path="packageId" placeholder="Package Id" required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveredPerson" class="text-box" />
+				<div>
+					<label for="deliveredPerson">Delivered Person</label>
+					<div>
+						<form:input path="deliveredPerson" placeholder="Delivered Person" title="Delivered Person can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveredAadhaarNumber" class="text-box" />
+				<div>
+					<label for="deliveredAadhaarNumber">Delivered Aadhaar Number</label>
+					<div>
+						<form:input path="deliveredAadhaarNumber" placeholder="Delivered Aadhaar Number" pattern="[1-9]{1}[0-9]{12}"
+title="Delivery Aadhaar Number should have atleast 12 digits"
+required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveredPhoneNumber" class="text-box" />
+				<div>
+					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
+					<div>
+						<form:input path="deliveredPhoneNumber" placeholder="Delivered phone Number" pattern="[1-9]{1}[0-9]{10}"
+title="Delivery Phone Number should have atleast 10 digits"
+required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveredCity" class="text-box" />
+				<div>
+					<label for="deliveredCity">Delivered City</label>
+					<div>
+						<form:input path="deliveredCity" placeholder="Delivered City" title="Delivery City can't be empty or must contain only alphabets"
+pattern="^[a-zA-Z]+$" required="true"/>
+					</div>
+				</div>
+				<form:errors path="deliveredPincode" class="text-box" />
+				<div>
+					<label for="deliveredPincode">Delivered Pincode</label>
+					<div>
+						<form:input path="deliveredPincode" placeholder="Delivered Pincode" pattern="[1-9]{1}[0-9]{7}"
+title="Delivery Pincode should have atleast 7 digits"
+required="true"/>
+					</div>
+				</div>
+				<div>
+					<form:button>Update Package Delivery Details</form:button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</body>
+</html>

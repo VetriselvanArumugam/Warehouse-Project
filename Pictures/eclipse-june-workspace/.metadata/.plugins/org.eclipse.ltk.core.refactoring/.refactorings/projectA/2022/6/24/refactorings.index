@@ -1,0 +1,23 @@
+1654687229824	Encapsulate field 'name'
+1654687239810	Encapsulate field 'id'
+1654687675747	Rename resource 'services.xml'
+1654756609396	Delete element
+1654756625504	Delete element
+1654770638349	Delete element
+1654770687937	Delete element
+1654770725009	Delete element
+1654832439118	Move compilation unit
+1654832448187	Move compilation unit
+1654835591496	Rename package 'com.chainsys.projectA.appconfig'
+1654835609734	Rename package 'com.chainsys.projectA.beans'
+1654835640455	Rename package 'com.chainsys.projectA.getbeans'
+1654835658965	Rename package 'com.chainsys.projectA.startup'
+1654835674122	Rename package 'com.chainsys.projectA.test'
+1654835701821	Delete element
+1654836102025	Rename package 'com.chainsys.springproject_a.beans'
+1654836112087	Rename package 'com.chainsys.springproject_a.appconfig'
+1654838832698	Copy file
+1654844101771	Encapsulate field 'city'
+1654844106165	Encapsulate field 'pinCode'
+1654850192238	Copy compilation units
+1654864435476	Copy compilation units

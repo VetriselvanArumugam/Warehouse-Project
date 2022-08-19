@@ -1,0 +1,16 @@
+
+X
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕRMINORZ
+CODE_SMELL
+q
+java:S1128"CRemove this unused import 'com.chainsys.warehouse.model.Warehouse'.(±Ÿ¿²øÿÿÿÿRMINORZ
+CODE_SMELL
+z
+java:S1128"RRemove this unused import 'com.chainsys.warehouse.model.WarehouseStorageUnitsDTO'.(íß»*RMINORZ
+CODE_SMELL
+o
+java:S1128"FRemove this unused import 'com.chainsys.warehouse.model.StorageUnits'.(œëÜôRMINORZ
+CODE_SMELL
+’
+java:S1488"dImmediately return this expression instead of assigning it to the temporary variable "listpackages".(üœ©ÁùÿÿÿÿRMINORZ
+CODE_SMELL

@@ -1,0 +1,8 @@
+
+Ž
+java:S11920"YDefine a constant instead of duplicating this literal "redirect:/warehouse/list" 3 times.(ÐšŽÅÿÿÿÿÿH¬ÈRCRITICALZ
+CODE_SMELL
+s
+java:S4684?"@Replace this persistent entity with a simple POJO or DTO object.(¤‰«”H°ÈRCRITICALZVULNERABILITY
+s
+java:S4684+"@Replace this persistent entity with a simple POJO or DTO object.(¢ÒÞÇH±ÈRCRITICALZVULNERABILITY

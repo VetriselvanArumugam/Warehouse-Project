@@ -1,0 +1,17 @@
+
+s
+java:S4684V"@Replace this persistent entity with a simple POJO or DTO object.(ÂÚÃ¹H“ÊRCRITICALZVULNERABILITY
+u
+java:S1128"CRemove this unused import 'com.chainsys.warehouse.model.Warehouse'.(±Ÿ¿²øÿÿÿÿH‘ÊRMINORZ
+CODE_SMELL
+e
+java:S1128"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿHÊRMINORZ
+CODE_SMELL
+x
+java:S4684D"@Replace this persistent entity with a simple POJO or DTO object.(¤á¼¶ıÿÿÿÿHÊRCRITICALZVULNERABILITY
+v
+java:S1854e"=Remove this useless assignment to local variable "adminlist".(ùöşÎşÿÿÿÿ8³Æ‰Òª0HÊRMAJORZ
+CODE_SMELL
+g
+java:S1481e".Remove this unused "adminlist" local variable.(ùöşÎşÿÿÿÿ8³Æ‰Òª0HÊRMINORZ
+CODE_SMELL
