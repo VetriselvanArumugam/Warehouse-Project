@@ -22,6 +22,7 @@ import com.chainsys.warehouse.service.PackageDeliveryDetailsService;
 public class PackageDeliveryDetailsController {
     @Autowired
     PackageDeliveryDetailsService pddservice;
+    private static final String PACKAGELIST = "redirect:/packageDeliveryDetails/list";
     @GetMapping("/list")
     
     public String getAllPackageDeliveryDetails(Model model) {
@@ -42,7 +43,7 @@ public class PackageDeliveryDetailsController {
 			return "add-packagedeliverydetails-form";
 		}
     	pddservice.save(thepackageDeliveryDetails);
-        return "redirect:/packageDeliveryDetails/list";
+        return PACKAGELIST ;
     }
     @GetMapping("/updatepackagedeliverydetailsform")
     public String updatepackagedeliverydetails() {
@@ -63,7 +64,7 @@ public class PackageDeliveryDetailsController {
 			return "update-packagedeliverydetails-form";
 		}
     	pddservice.save(thepackageDeliveryDetails);
-        return "redirect:/packageDeliveryDetails/list";
+        return PACKAGELIST ;
     }
     @GetMapping("/deletepackagedeliverydetailsform")
     public String deletepackagedeliverydetails() {
@@ -73,7 +74,7 @@ public class PackageDeliveryDetailsController {
     
     public String deletepackageDeliveryDetails(@RequestParam("id") int id) {
     	pddservice.deleteById(id);
-        return "redirect:/packageDeliveryDetails/list";
+        return PACKAGELIST ;
     }
     @GetMapping("/getpackagedeliveryetailsform")
     public String getpackagedeliverydetails() {

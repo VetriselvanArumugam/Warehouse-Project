@@ -19,6 +19,7 @@ import com.chainsys.warehouse.service.AdminService;
 public class AdminController {
 	@Autowired
 	AdminService adminService;
+	 private static final String ADMINLIST =  "redirect:/list";
 	@GetMapping("/admin")
     public String webApp(Model m) {
         return "index";
@@ -83,7 +84,7 @@ public class AdminController {
     
     public String addNewAdmin(@ModelAttribute("addadmin") Admin theAdmin) {
     	adminService.save(theAdmin);
-        return "redirect:/list";
+        return ADMINLIST;
 }
     @GetMapping("/list")
     
@@ -97,6 +98,6 @@ public class AdminController {
     
     public String getAbout(Model model) {
         List<Admin> adminlist = adminService.getAdmin();
-        return "adminlist";
+        return "about";
     }
 }

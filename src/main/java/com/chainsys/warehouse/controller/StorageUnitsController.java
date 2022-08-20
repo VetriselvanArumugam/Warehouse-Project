@@ -22,6 +22,7 @@ import com.chainsys.warehouse.service.StorageUnitsService;
 public class StorageUnitsController {
 	@Autowired
 	StorageUnitsService storageUnitService;
+	 private static final String STORAGEUNITSLIST = "redirect:/storageunit/list";
 	@GetMapping("/list")
 	
 	public String getAllStorageunit(Model model) {
@@ -45,7 +46,7 @@ public class StorageUnitsController {
 			return "add-storageunits-form";
 		}
 		storageUnitService.save(thestorageunits);
-		return "redirect:/storageunit/list";
+		return STORAGEUNITSLIST ;
 	}
 	@GetMapping("/updatestorageunitsform")
     public String updatestorageunits() {
@@ -66,7 +67,7 @@ public class StorageUnitsController {
 			return "update-storageunits-form";
 		}
 		storageUnitService.save(thestorageunits);
-		return "redirect:/storageunit/list";
+		return STORAGEUNITSLIST;
 	}
 	@GetMapping("/deletestorageunitsform")
     public String deletestorageunits() {
@@ -76,7 +77,7 @@ public class StorageUnitsController {
 	
 	public String deleteStorageUnits(@RequestParam("id") int id) {
 		storageUnitService.deleteById(id);
-		return "redirect:/storageunit/list";
+		return STORAGEUNITSLIST;
 	}
 	@GetMapping("/getstorageunitsform")
     public String getstorageunits() {

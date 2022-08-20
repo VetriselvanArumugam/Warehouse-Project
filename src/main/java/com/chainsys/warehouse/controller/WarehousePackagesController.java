@@ -23,6 +23,7 @@ import com.chainsys.warehouse.service.WarehousePackagesService;
 public class WarehousePackagesController {
     @Autowired
     WarehousePackagesService WarehousePackagesService;
+    private static final String WAREHOUSEPACKAGESLIST = "redirect:/packages/list";
     @GetMapping("/list")
     
     public String getAllPackages(Model model) {
@@ -45,7 +46,7 @@ public class WarehousePackagesController {
 			return "add-packages-form";
 		}
     	WarehousePackagesService.save(thepackages);
-        return "redirect:/packages/list";
+        return WAREHOUSEPACKAGESLIST ;
     }
     @GetMapping("/updatewarehousepackagesform")
     public String updateWarehousePackages() {
@@ -66,7 +67,7 @@ public class WarehousePackagesController {
 			return "update-packages-form";
 		}
     	WarehousePackagesService.save(thepackages);
-        return "redirect:/packages/list";
+        return WAREHOUSEPACKAGESLIST ;
     }
     @GetMapping("/deletewarehousepackagesform")
     public String deleteWarehousePackages() {
@@ -76,7 +77,7 @@ public class WarehousePackagesController {
     
     public String deletepackages(@RequestParam("id") int id) {
     	WarehousePackagesService.deleteById(id);
-        return "redirect:/packages/list";
+        return WAREHOUSEPACKAGESLIST ;
     }
     @GetMapping("/getwarehousepackagesform")
     public String getWarehousePackages() {
@@ -100,7 +101,6 @@ public class WarehousePackagesController {
         PackagesPackageDeliveryDetailsDTO packagesPackageDeliveryDetails = WarehousePackagesService.getPackagesPackageDeliveryDetails(id);
         model.addAttribute("getpackages",packagesPackageDeliveryDetails.getPackages());
         model.addAttribute("deliverydetails",packagesPackageDeliveryDetails.getPackageDeliveryDetails());
-//        model.addAttribute("storagedetails", packagesPackageDeliveryDetails.)
         return "list-packages-packagedeliverydetails-form";
 }
     

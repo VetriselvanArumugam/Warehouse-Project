@@ -23,6 +23,7 @@ import com.chainsys.warehouse.service.WarehouseService;
 public class WarehouseController {
     @Autowired
     WarehouseService warehouseService;
+    private static final String WAREHOUSELIST = "redirect:/warehouse/list";
     @GetMapping("/list")
     
     public String getAllWarehouse(Model model) {
@@ -45,7 +46,7 @@ public class WarehouseController {
     			return "add-warehouse-form";
     		}
     	warehouseService.save(thewarehouse);
-        return "redirect:/warehouse/list";
+        return WAREHOUSELIST;
     }
     @GetMapping("/updatewarehouseform")
     public String updateWarehouseForm() {
@@ -65,7 +66,7 @@ public class WarehouseController {
 			return "update-warehouse-form";
 		}
     	warehouseService.save(theWarehouse);
-        return "redirect:/warehouse/list";
+        return WAREHOUSELIST;
     }
     @GetMapping("/deletewarehouseform")
     public String deleteWarehouseForm() {
@@ -75,7 +76,7 @@ public class WarehouseController {
     @GetMapping("/deletewarehouse")
     public String deletewarehouse(@RequestParam("warehouseid") int id) {
     	warehouseService.deleteById(id);
-        return "redirect:/warehouse/list";
+        return WAREHOUSELIST;
     }
     @GetMapping("/getwarehouseform")
     public String getWarehouseForm() {
