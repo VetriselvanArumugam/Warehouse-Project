@@ -72,7 +72,6 @@ body {
 <body>
 <div class="topnav" id="myTopnav">
   <a href="/adminlogin" class="active">Admin Login</a>
-  <a href="/addadmin">Create Admin</a>
   <a href="/about">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <em class="fa fa-bars"></em>
