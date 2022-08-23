@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chainsys.warehouse.model.StorageUnits;
 import com.chainsys.warehouse.model.Warehouse;
-import com.chainsys.warehouse.model.WarehousePackages;
 import com.chainsys.warehouse.service.StorageUnitsService;
 import com.chainsys.warehouse.service.WarehouseService;
 
