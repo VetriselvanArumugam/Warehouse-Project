@@ -27,16 +27,16 @@
 		<div class="row jumbotron">
 			<form:form action="add" method="post" modelAttribute="addwarehouse">
 				<div></div>
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="address">Address</label>
 					<div>
 						<form:input path="address" placeholder="Address"
-							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" />
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true"/>
 					</div>
 				</div>
 				<form:errors path="address" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="location">Location</label>
 					<div >
 						<form:input path="location" placeholder="Location"
@@ -45,11 +45,11 @@
 				</div>
 				<form:errors path="location" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="state">State</label>
 					<div >
 						<form:select path="state" placeholder="State"
-							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" >
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true">
 							<form:option value="Tamilnadu">Tamilnadu</form:option>
 							<form:option value="Kerala">Kerala</form:option>
 							<form:option value="AndhraPradesh">Andhra Pradesh</form:option>
@@ -61,33 +61,33 @@
 				</div>
 				<form:errors path="state" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="country">Country</label>
 					<div >
 						<form:input path="country" placeholder="Country"
-							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" />
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true"/>
 					</div>
 				</div>
 				<form:errors path="country" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="pincode">Pincode</label>
 					<div>
-						<form:input path="pincode" placeholder="Pincode" nrequired="true" />
+						<form:input path="pincode" placeholder="Pincode" required="true" />
 					</div>
 				</div>
 				<form:errors path="pincode" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="totalArea">Total Area</label>
 					<div>
 						<form:input path="totalArea" placeholder="Total Area"
-						 required="true" />
+						 required="true" pattern="^[A-Za-z0-9._%+-]+$"/>
 					</div>
 				</div>
 				<form:errors path="totalArea" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="warehouseType">Warehouse Type</label>
 					<div>
 						<form:select path="warehouseType" placeholder="Warehouse Type"

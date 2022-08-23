@@ -70,7 +70,7 @@ cellpadding:2px;
 						<td>${packages.emailId}</td>
 						<td>${packages.packageWeight}</td>
 						<td>${packages.packageHeight}</td>
-						<td><a href="updatewarehousepackagesform?id=${Packages.PackageId}">Edit</a></td>
+						<td><a href="updateform?id=${packages.packageId}">Edit</a></td>
 						</tr>
 				</c:forEach>
 			</tbody>

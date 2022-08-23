@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Update Package Delivery Details</title>
+<style type="text/css"><%@include file="/WEB-INF/css/updatepackagedeliverydetails.css"%></style></style>
 </head>
 <body>
     <h3>Update Package Delivery Details</h3>

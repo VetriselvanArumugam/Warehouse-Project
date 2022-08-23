@@ -61,7 +61,7 @@ cellpadding:2px;
 						<td>${packagedeliverydetails.deliveredPhoneNumber}</td>
 						<td>${packagedeliverydetails.deliveredCity}</td>
 						<td>${packagedeliverydetails.deliveredPincode}</td>
-						 <td><a href="updatepackagedeliverydetailsform?id=${packagedeliverydetails.deliveryNumber }">Edit</a></td>
+						 <td><a href="updateform?id=${packagedeliverydetails.deliveryNumber}">Edit</a></td>
 						</tr>
 				</c:forEach>
 			</tbody>

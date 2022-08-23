@@ -29,19 +29,23 @@
 			<form:form action="add" method="post"
 				modelAttribute="addstorageunits">
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="warehouseId">Warehouse Id</label>
-					<div>
-						<form:input path="warehouseId" />
-					</div>
+					<form:select path="warehouseId" placeholder="Warhouse Id">
+
+                            <c:forEach var="allWarehouse" items="${getwarehouse}">
+                                <form:option value="${allWarehouse.warehouseId}"
+                                    label="${allWarehouse.warehouseId}" />
+                            </c:forEach>
+                        </form:select>
 				</div>
 				<form:errors path="warehouseId" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="storageType">Storage Type</label>
 					<div>
 						<form:select path="storageType" placeholder="Storage Type"
-							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" >
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true">
 							<form:option value="Electronics">Electronics</form:option>
 							<form:option value="Books">Books</form:option>
 							<form:option value="FoodAndDrinks">Food And Drinks</form:option>
@@ -57,38 +61,38 @@
 				</div>
 				<form:errors path="storageType" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="maximumCapacity">Maximum Capacity</label>
 					<div>
-						<form:input path="maximumCapacity" placeholder="Maximum Capacity"
+						<form:input path="maximumCapacity" placeholder="Maximum Capacity" type="number"
 							required="true" />
 					</div>
 				</div>
 				<form:errors path="maximumCapacity" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="currentUsedCapacity">Current Used Capacity</label>
 					<div>
 						<form:input path="currentUsedCapacity"
-							placeholder="Current Used Capacity" required="true" />
+							placeholder="Current Used Capacity" type="number" required="true" />
 					</div>
 				</div>
 				<form:errors path="currentUsedCapacity" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="remainingCapacity">Remaining Capacity</label>
 					<div>
 						<form:input path="remainingCapacity"
-							placeholder="Remaining Capacity" required="true" />
+							placeholder="Remaining Capacity" type="number" required="true" />
 					</div>
 				</div>
 				<form:errors path="currentUsedCapacity" class="text-box" />
 				
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="status" class="label-size">Status</label>
 					<div>
 						<form:select path="status" class="text-box" placeholder="Status"
-							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only">
+							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true">
 							<form:option value="Done">Done</form:option>
 							<form:option value="WorkingProgress">Working Progress</form:option>
 						</form:select>
@@ -96,11 +100,11 @@
 				</div>
 				<form:errors path="status" class="text-box" />
 
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="locationOfStorageUnit">Location Of Storage Unit</label>
 					<div>
 						<form:select path="locationOfStorageUnit" pattern="^[a-z A-Z]+$"
-							title="Please Enter Charactor Only" >
+							title="Please Enter Charactor Only" required="true">
 							<form:option value="ElectronicBlock">Electronics Block</form:option>
 							<form:option value="BooksBlock">Books Block</form:option>
 							<form:option value="FoodAndDrinksBlock">Food And Drinks Block</form:option>

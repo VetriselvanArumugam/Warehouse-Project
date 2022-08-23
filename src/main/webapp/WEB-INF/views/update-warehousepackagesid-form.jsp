@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Update Warehouse Packages</title>
+<style type="text/css"><%@include file="/WEB-INF/css/updatepackages.css"%></style></style>
 </head>
 <body>
     <h3>Update Warehouse Packages</h3>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.chainsys.warehouse.model.PackageDeliveryDetails;
 import com.chainsys.warehouse.model.PackagesPackageDeliveryDetailsDTO;
+import com.chainsys.warehouse.model.StorageUnits;
 import com.chainsys.warehouse.model.WarehousePackages;
 import com.chainsys.warehouse.repository.PackageDeliveryDetailsRepository;
 import com.chainsys.warehouse.repository.WarehousePackagesRepository;
@@ -47,4 +48,8 @@ public class WarehousePackagesService {
 	        
 	        return packagesPackageDeliveryDetails;
 }
+	 public List<WarehousePackages> allWarehousePackages()
+	    {
+	    	return warehousePackagesRepository.findAll();
+	    }
 }

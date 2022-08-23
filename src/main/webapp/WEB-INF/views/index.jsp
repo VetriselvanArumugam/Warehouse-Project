@@ -19,13 +19,13 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #33333359;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #020202;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -33,13 +33,13 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #1817175e;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #01e5f785;
+  color: #020202;
 }
 
 .topnav .icon {
@@ -67,6 +67,7 @@ body {
     text-align: left;
   }
 }
+
 </style>
 </head>
 <body>

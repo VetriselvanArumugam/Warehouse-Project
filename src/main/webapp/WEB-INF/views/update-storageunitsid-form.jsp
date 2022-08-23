@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Update Storage Units</title>
+<style type="text/css"><%@include file="/WEB-INF/css/updatestorageunits.css"%></style></style>
 </head>
 <body>
     <h3>Update Storage Units</h3>

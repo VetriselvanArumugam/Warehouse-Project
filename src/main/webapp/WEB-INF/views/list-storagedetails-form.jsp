@@ -52,7 +52,7 @@ cellpadding:2px;
 						<td>${StorageDetails.receiptDate}</td>
 						<td>${StorageDetails.unitId}</td>
 						<td>${StorageDetails.packageId}</td>
-						<td><a href="updateform?addstorageDetails=${StorageDetails.receiptNumber}">Edit</a></td>
+						<td><a href="updateform?id=${StorageDetails.receiptNumber}">Edit</a></td>
 						
 						
 				</c:forEach>

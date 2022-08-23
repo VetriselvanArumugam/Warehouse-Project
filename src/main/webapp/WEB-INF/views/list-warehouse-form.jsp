@@ -62,7 +62,7 @@ cellpadding:2px;
 						<td>${Warehouse.pincode}</td>
 						<td>${Warehouse.totalArea}</td>
 						<td>${Warehouse.warehouseType}</td>
-						<td><a href="updatewarehouseform?id=${Warehouse.warehouseId}">Edit</a></td>
+						<td><a href="updateform?id=${Warehouse.warehouseId}">Edit</a></td>
 				</c:forEach>
 		</table>
 		<div>

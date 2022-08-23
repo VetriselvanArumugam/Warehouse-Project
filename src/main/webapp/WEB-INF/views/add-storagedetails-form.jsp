@@ -28,27 +28,35 @@
 
 			<form:form action="add" method="post" modelAttribute="addstorageDetails">
 				
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="receiptDate">Receipt Date</label>
 					<div>
-						<form:input path="receiptDate" placeholder="Receipt Date" type="date"/>
+						<form:input path="receiptDate" placeholder="Receipt Date" type="date" required="true"/>
 					</div>
 				</div>
 				<form:errors path="receiptDate" class="text-box" />
 				
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="unitId">Unit Id</label>
-					<div>
-						<form:input path="unitId" placeholder="Unit Id" required="true"/>
-					</div>
-				</div>
+					<form:select path="unitId" placeholder="Unit Id">
+
+                            <c:forEach var="allStorageUnits" items="${getAllStorageUnits}">
+                                <form:option value="${allStorageUnits.unitId}"
+                                    label="${allStorageUnits.unitId}" />
+                            </c:forEach>
+                        </form:select>	
+                       </div>
 				<form:errors path="unitId" class="text-box" />
 				
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageId">Package Id</label>
-					<div>
-						<form:input path="packageId" placeholder="Package Id" required="true"/>
-					</div>
+					<form:select path="packageId" placeholder="Package Id" required="true">
+
+                            <c:forEach var="allWarehousePackages" items="${getAllWarehousePackages}">
+                                <form:option value="${allWarehousePackages.packageId}"
+                                    label="${allWarehousePackages.packageId}" />
+                            </c:forEach>
+                        </form:select>	
 				</div>
 				<form:errors path="packageId" class="text-box" />
 				<div class="col-sm-7 form-group mb-3">

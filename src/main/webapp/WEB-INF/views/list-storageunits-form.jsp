@@ -60,7 +60,7 @@ cellpadding:2px;
 						<td>${storage_units.remainingCapacity}</td>
 						<td>${storage_units.status}</td>
 						<td>${storage_units.locationOfStorageUnit}</td>
-						<td><a href="updatestorageunitsform?id=${storage_units.unitId}">Edit</a></td>
+						<td><a href="updateform?id=${storage_units.unitId}">Edit</a></td>
 				</c:forEach>
 			</tbody>
 		</table>

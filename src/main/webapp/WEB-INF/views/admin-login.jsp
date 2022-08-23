@@ -102,8 +102,10 @@ link a {
 				</div>
 				<div class="control">
 					<input type="submit" value="Login">
+					<div>${result}</div>
 				</div>
 			</form:form>
+			
 		</div>
 	</section>
 </body>

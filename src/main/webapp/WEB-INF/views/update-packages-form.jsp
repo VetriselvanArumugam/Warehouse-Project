@@ -28,7 +28,7 @@ body {
 </head>
 <body>
 <p>
-		<button onclick="document.location='/home'" style="float:left">Back</button>
+		<button onclick="document.location='/packages/list'" style="float:left">Back</button>
 	</p>
 	<div class="container">
 
@@ -37,7 +37,7 @@ body {
 			<form:form action="update" method="post"
 				modelAttribute="updatepackages">
 				<form:errors path="packageId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageId">Package Id</label>
 					<div>
 						<form:input path="packageId" placeholder="Package Id"
@@ -45,46 +45,60 @@ body {
 					</div>
 				</div>
 				<form:errors path="packageNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageNumber">Package Number</label>
 					<div>
 						<form:input path="packageNumber" placeholder="Package Number"
-							placeholder="Package Number" pattern="[0-9]{1}[0-9]{1}[0-9]{1}" title="Enter 3 digits number" />
+							 pattern="[0-9]{1}[0-9]{1}[0-9]{1}" title="Enter 3 digits number" />
 					</div>
 				</div>
 				<form:errors path="packageName" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageName">Package Name</label>
 					<div>
-						<form:input path="packageName" placeholder="Package Name"
-							placeholder="Package Name"
-						pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" />
+						<form:select path="packageName" placeholder="Package Name" pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true">
+						 <form:option value="Electronics">Electronics</form:option>
+							<form:option value="Books">Books</form:option>
+							<form:option value="FoodAndDrinks">Food And Drinks</form:option>
+							<form:option value="Essence">Essence</form:option>
+							<form:option value="Furnitures">Furnitures</form:option>
+							<form:option value="Granates">Granate</form:option>
+							<form:option value="Drugs">Drugs</form:option>
+							<form:option value="Chemicals">Chemicals</form:option>
+							<form:option value="Fertilizers">Fertilizers</form:option>
+							<form:option value="Garments">Garments</form:option>
+							</form:select>
 					</div>
 				</div>
 				<form:errors path="packageType" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageType">Package Type</label>
 					<div>
 						<form:input path="packageType" placeholder="Package Type"
-							placeholder="Package Type"
 							pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only"  />
 					</div>
 				</div>
 				<form:errors path="packageDate" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageDate">Package Date</label>
 					<div>
-						<form:input path="packageDate" placeholder="Package Date" />
+						<form:select path="packageType" placeholder="Package Type" pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only" required="true">
+						<form:option value="Solid">Solid</form:option>
+						<form:option value="Liquid">Liquid</form:option>
+						<form:option value="Solid And Liquid">Solid And Liquid</form:option>
+						<form:option value="Acids">Acid</form:option>
+						<form:option value="Gas">Gas</form:option>
+						</form:select>
 					</div>
 				</div>
 				<form:errors path="expiryDate" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="expiryDate">Expiry Date</label>
 					<div>
 						<form:input path="expiryDate" placeholder="Expiry Date" />
 					</div>
 				</div>
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="status" class="label-size">Status</label>
 					<div>
 						<form:select path="status" class="text-box" placeholder="Status"
@@ -96,7 +110,7 @@ body {
 				</div>
 				<form:errors path="status" class="text-box" />
 				<form:errors path="ownerName" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="ownerName">Owner Name</label>
 					<div>
 						<form:input path="ownerName" placeholder="Owner Name"
@@ -104,23 +118,22 @@ body {
 					</div>
 				</div>
 				<form:errors path="ownerAadhaarNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="ownerAadhaarNumber">Owner Aadhaar Number</label>
 					<div>
 						<form:input path="ownerAadhaarNumber"
-							placeholder="Owner Aadhaar Number"
 							placeholder="Owner Aadhaar Number" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" title="Enter 12 digits number" />
 					</div>
 				</div>
 				<form:errors path="phoneNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="phoneNumber">Phone Number</label>
 					<div>
 						<form:input path="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Enter 10 digits number"/>
 					</div>
 				</div>
 				<form:errors path="emailId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="emailId">Email Id</label>
 					<div>
 						<form:input path="emailId" placeholder="Email Id"
@@ -129,7 +142,7 @@ body {
 					</div>
 				</div>
 				<form:errors path="packageWeight" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageWeight">Package Weight</label>
 					<div>
 						<form:input path="packageWeight" placeholder="Package Weight"
@@ -139,7 +152,7 @@ required="true" />
 					</div>
 				</div>
 				<form:errors path="packageHeight" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageHeight">Package Height</label>
 					<div>
 						<form:input path="packageHeight" placeholder="Package Height"

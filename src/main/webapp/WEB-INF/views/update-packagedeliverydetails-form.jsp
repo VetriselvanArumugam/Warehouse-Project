@@ -26,7 +26,7 @@ body {
 </head>
 <body>
 <p>
-		<button onclick="document.location='/home'" style="float:left">Back</button>
+		<button onclick="document.location='/packageDeliveryDetails/list'" style="float:left">Back</button>
 	</p>
 	<div class="container">
 
@@ -34,63 +34,63 @@ body {
 		<div class="row jumbotron">
 			<form:form action="update" method="post" modelAttribute="updatepackageDeliveryDetails">
 			<form:errors path="deliveryNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveryNumber">Delivery Number</label>
 					<div>
 						<form:input path="deliveryNumber" placeholder="Delivery Number" required="true"/>
 					</div>
 				</div>
 				<form:errors path="deliveryDate" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveryDate">Delivery Date</label>
 					<div>
 						<form:input path="deliveryDate" placeholder="Delivery Date"/>
 					</div>
 				</div>
 				<form:errors path="unitId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="unitId">Unit Id</label>
 					<div>
 						<form:input path="unitId" placeholder="Unit Id" required="true"/>
 					</div>
 				</div>
 				<form:errors path="packageId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageId">Package Id</label>
 					<div>
 						<form:input path="packageId" placeholder="Package Id" required="true"/>
 					</div>
 				</div>
 				<form:errors path="deliveredPerson" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveredPerson">Delivered Person</label>
 					<div>
 						<form:input path="deliveredPerson" placeholder="Delivered Person" pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only"/>
 					</div>
 				</div>
 				<form:errors path="deliveredAadhaarNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveredAadhaarNumber">Delivered Aadhaar Number</label>
 					<div>
 						<form:input path="deliveredAadhaarNumber" placeholder="Delivered Aadhaar Number" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" title="Enter 12 digits number" />
 					</div>
 				</div>
 				<form:errors path="deliveredPhoneNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
 					<div>
 						<form:input path="deliveredPhoneNumber" placeholder="Delivered phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Enter 10 digits number"/>
 					</div>
 				</div>
 				<form:errors path="deliveredCity" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveredCity">Delivered City</label>
 					<div>
 						<form:input path="deliveredCity" placeholder="Delivered City" pattern="^[a-z A-Z]+$" title="Please Enter Charactor Only"/>
 					</div>
 				</div>
 				<form:errors path="deliveredPincode" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="deliveredPincode">Delivered Pincode</label>
 					<div>
 						<form:input path="deliveredPincode" placeholder="Delivered Pincode" pattern="[0-9]{3}[0-9]{3}" title="Enter 6 digits number" required="true"/>

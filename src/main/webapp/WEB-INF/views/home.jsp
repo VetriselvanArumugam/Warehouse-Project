@@ -13,7 +13,7 @@
 </head>
 <body>
 <p>
-		<button  Class="button-85" role="button" onclick="document.location='/admin'" style="float:left">Back</button>
+		<button  Class="button-85" role="button" onclick="document.location='/admin'" style="float:left">LogOut</button>
 	</p>
     <h1  class="glow">Listing House</h1>
 
@@ -76,6 +76,7 @@
                 <a href="/packages/getpackagedeliveryform"> Fetch List</a>
                 
     </div>
+      
 
 </body>
 </html>

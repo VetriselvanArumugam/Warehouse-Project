@@ -15,11 +15,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chainsys.warehouse.model.StorageUnits;
+import com.chainsys.warehouse.model.Warehouse;
+import com.chainsys.warehouse.model.WarehousePackages;
 import com.chainsys.warehouse.service.StorageUnitsService;
+import com.chainsys.warehouse.service.WarehouseService;
 
 @Controller
 @RequestMapping("/storageunit")
 public class StorageUnitsController {
+	@Autowired
+    private WarehouseService warehouseService; 
 	@Autowired
 	StorageUnitsService storageUnitService;
 	 private static final String STORAGEUNITSLIST = "redirect:/storageunit/list";
@@ -34,6 +39,8 @@ public class StorageUnitsController {
 	@GetMapping("/addform")
 	
 	public String showAddForm(Model model) {
+		List<Warehouse> allWarehouse=warehouseService.allWarhouse();
+		model.addAttribute("getwarehouse", allWarehouse);
 		StorageUnits theStorageUnits = new StorageUnits();
 		model.addAttribute("addstorageunits", theStorageUnits);
 		return "add-storageunits-form";
@@ -53,7 +60,6 @@ public class StorageUnitsController {
         return "update-storageunitsid-form";
     }
 	@GetMapping("/updateform")
-	@Valid
 	public String showUpdateForm(@RequestParam("id") int id, Model model) {
 		StorageUnits thestorageunits = storageUnitService.findById(id);
 		model.addAttribute("updatestorageunits", thestorageunits);

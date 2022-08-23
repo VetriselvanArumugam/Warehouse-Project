@@ -5,12 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chainsys.warehouse.model.StorageUnits;
+import com.chainsys.warehouse.model.Warehouse;
+import com.chainsys.warehouse.model.WarehousePackages;
 import com.chainsys.warehouse.repository.StorageUnitsRepository;
 @Service
 public class StorageUnitsService {
 	
 	    @Autowired
 	    private StorageUnitsRepository storageUnitsRepository;
+	    
+	    
 
 		public List<StorageUnits> getStorageUnits() {
 	        List<StorageUnits> liststorageUnits = storageUnitsRepository.findAll();
@@ -39,4 +43,12 @@ public class StorageUnitsService {
 	    	storageUnitsRepository.deleteById(id);
 	    }
 
+	    public List<StorageUnits> allStorageUnits()
+	    {
+	    	return storageUnitsRepository.findAll();
+	    }
+//	    public List<Warehouse> allWarehouse()
+//	    {
+//	    	return storageUnitsRepository.findAll();
+//	    }
 }

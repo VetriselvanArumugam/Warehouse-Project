@@ -49,4 +49,8 @@ public class WarehouseService {
 	        return warehouseStorageUnits;
 	    }
 
+	    public List<Warehouse> allWarhouse()
+	    {
+	    	return warehouseRepository.findAll();
+	    }
 }

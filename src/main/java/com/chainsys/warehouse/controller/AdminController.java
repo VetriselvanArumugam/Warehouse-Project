@@ -64,14 +64,16 @@ public class AdminController {
     }                   
 
     @PostMapping("/checkadminlogin")
-    public String checkingAccess(@ModelAttribute("admin") Admin user) {
+    public String checkingAccess(@ModelAttribute("admin") Admin user,Model model) {
         Admin admin = adminService.getUserNamePassword(user.getUserName(), user.getPassword());
         if (admin!= null){
 
             return "redirect:/home";
-        } else
-            return "invalid-user-error";
+        } else {
+            model.addAttribute("result", "Invalid username and password");
     }
+    return "admin-login";
+}
     @GetMapping("/addadmin")
   
     public String showAddForm(Model model)

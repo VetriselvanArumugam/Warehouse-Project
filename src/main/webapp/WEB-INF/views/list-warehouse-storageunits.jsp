@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Warehouse Storage Units List</title>
-<style type="text/css">.table-size{
+<style type="text/css"><%@include file="/WEB-INF/css/listpackages.css"%>.table-size{
 border:2px ;
 width:100%;
 cellpadding:2px;

@@ -7,21 +7,21 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<style type="text/css">
-tr:hover {background-color: #99ff99;}
+<style type="text/css"><%@include file="/WEB-INF/css/listpackages.css"%>
+tr:hover {background-color: #9135ab75;}
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 tr:nth-child(even) {
-  background-color: rgba(150, 212, 212, 0.4);
+  background-color: rgba(133, 17, 73, 0.3);
 }
 th:nth-child(even),td:nth-child(even) {
-  background-color: rgba(150, 212, 212, 0.4);
-}
+  background-color: rgba(133, 17, 73, 0.3);
+  }
 body {
     background-image:
-        url("https://img.freepik.com/premium-photo/3d-factory-concept-3d-render_1119-2759.jpg?w=740");
+        url("https://img.freepik.com/premium-photo/parcels-box-cardboard-boxes-online-delivery-transportation-logistics-concept-pink-background-3d-rendering-illustration_56104-1290.jpg?w=740");
         background-height: 786px;
     background-width: 1366px;
     background-attachment: fixed;
@@ -32,6 +32,9 @@ div{text-align:center}
 </style>
 </head>
 <body>
+<p>
+		<button Class="button-85" role="button" onclick="document.location='/home'" style="float:bottomleft">Home</button>
+	</p>
 	<div id="root">
 		<div id="form">
 			<form:form action="" method="post" modelAttribute="getpackages">
@@ -113,72 +116,40 @@ div{text-align:center}
 						<form:input path="packageHeight" readonly="true"/>
 					</div>
 				</div>
-
 			</form:form>
 		</div>
+		<br>
+		<div id="deliverydetails">
+		<table>
+		<caption></caption>
+		<thead>
+		<tr>
+		<th>Delivery Number</th>
+		<th>Dlivery Date</th>
+		<th>Unit Id</th>
+		<th>Package Id</th>
+		<th>Delivered Person</th>
+		<th>Delivered Aadhaar Number</th>
+		<th>Delivered Phone Number</th>
+		<th>Delivered City</th>
+		<th>Delivered Pincode</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>${deliverydetails.deliveryNumber}</td>
+		<td>${deliverydetails.deliveryDate}</td>
+		<td>${deliverydetails.unitId}</td>
+		<td>${deliverydetails.packageId}</td>
+		<td>${deliverydetails.deliveredPerson}</td>
+		<td>${deliverydetails.deliveredAadhaarNumber}</td>
+		<td>${deliverydetails.deliveredPhoneNumber}</td>
+		<td>${deliverydetails.deliveredCity}</td>
+		<td>${deliverydetails.deliveredPincode}</td>
+		</tr>
+		</tbody>
+		</table></div>
 	</div>
-	<div id="root">
-		<div id="form">
-			<form:form action="" method="post"
-				modelAttribute="deliverydetails">
-				<div>
-					<label for="deliveryNumber">Delivery Number</label>
-					<div>
-						<form:input path="deliveryNumber" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveryDate">Dlivery Date</label>
-					<div>
-						<form:input path="deliveryDate" readonly="true" />
-					</div>
-				</div>
-				<div>
-					<label for="unitId">Unit Id</label>
-					<div>
-						<form:input path="unitId" readonly="true" />
-					</div>
-				</div>
-				<div>
-					<label for="packageId">Package Id</label>
-					<div>
-						<form:input path="packageId" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveredPerson">Delivered Person</label>
-					<div>
-						<form:input path="deliveredPerson" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveredAadhaarNumber">Delivered Aadhaar
-						Number</label>
-					<div>
-						<form:input path="deliveredAadhaarNumber" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveredPhoneNumber">Delivered Phone Number</label>
-					<div>
-						<form:input path="deliveredPhoneNumber" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveredCity">Delivered City</label>
-					<div>
-						<form:input path="deliveredCity" readonly="true"/>
-					</div>
-				</div>
-				<div>
-					<label for="deliveredPincode">Delivered Pincode</label>
-					<div>
-						<form:input path="deliveredPincode" readonly="true" />
-					</div>
-				</div>
-
-			</form:form>
-		</div>
-	</div>
+	
 </body>
 </html>

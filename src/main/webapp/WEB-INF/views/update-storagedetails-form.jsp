@@ -27,36 +27,36 @@ body {
 </head>
 <body>
 <p>
-		<button onclick="document.location='/home'" style="float:left">Back</button>
+		<button onclick="document.location='/storageDetails/list'" style="float:left">Back</button>
 	</p>
 	<div class="container">
 
 		<h2 class="text-center">StorageDetails Form</h2>
 		<div class="row jumbotron">
-			<form:form action="update" method="post" modelAttribute="updatestoragedetails">
+			<form:form action="update" method="post" modelAttribute="updatestorageDetails">
 			<form:errors path="receiptNumber" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="receiptNumber">Receipt Number</label>
 					<div>
 						<form:input path="receiptNumber" placeholder="Receipt Number" required="true"/>
 					</div>
 				</div>
 				<form:errors path="receiptDate" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="receiptDate">Receipt Date</label>
 					<div>
 						<form:input path="receiptDate" placeholder="Receipt Date"/>
 					</div>
 				</div>
 				<form:errors path="unitId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="unitId">Unit Id</label>
 					<div>
 						<form:input path="unitId" placeholder="Unit Id" required="true"/>
 					</div>
 				</div>
 				<form:errors path="packageId" class="text-box" />
-				<div class="col-sm-3 form-group">
+				<div class="col-sm-8 form-group">
 					<label for="packageId">Package Id</label>
 					<div>
 						<form:input path="packageId" placeholder="Package Id" required="true"/>
